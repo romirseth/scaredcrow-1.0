@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+:root {
+  --spacing: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: breathe infinite alternate 3s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.entersandman {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  border: mediumspringgreen solid 4px;
+  /* border-radius: 20px; */
+  position: absolute;
+  color: maroon;
+  animation: slowfade infinite 10s linear;
+  padding: 1.2%;
+  cursor: pointer;
+
+  /* font-size: 58px; */
+  /* top: 400px; */
+  /* animation: slowfade-alt infinite alternate 10s linear 5s; */
+}
+
+.come-in {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  /* border-radius: 20px; */
+  position: absolute;
+  color: mediumspringgreen;
+  opacity: 0;
+  animation: comeuppance infinite 10s linear;
+  padding: 10px;
+  cursor: pointer;
+
+  /* border: maroon solid 4px; */
+  /* font-size: 58px; */
+  /* top: 405px; */
+}
+
+/*
+  animations
+    animation: animation-name=fadein 
+    animation-timing-function=infinite 
+    animation-direction=alternate 
+    animation-duration=15s 
+    animation-timing-function=linear 
+    animation-delay=10s;
+*/
+
+@keyframes breathe {
+  from {
+    transform: scale(80%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+@keyframes slowfade-alt {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slowfade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0; 
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes comeuppance {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1; 
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dont-appear {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
