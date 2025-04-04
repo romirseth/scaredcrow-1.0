@@ -4,7 +4,7 @@ import scaredcrow from '../images/Scaredcrow.png';
 
 const navigateToHome = () => {
   console.log("navigateToHome");
-  window.location.href = '/home';
+  window.location.href = '/#home';
 };
 
 function Enter() {

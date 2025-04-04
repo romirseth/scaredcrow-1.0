@@ -1,7 +1,7 @@
 {
   "name": "scaredcrow",
   "version": "0.1.0",
-  "homepage": "https://www.scaredcrowband.com/",
+  "homepage": "https://www.scaredcrowband.com/#",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
