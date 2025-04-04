@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/scaredcrow-1.0/static/css/main.7141c1aa.css",
-    "main.js": "/scaredcrow-1.0/static/js/main.c44cfe9b.js",
-    "static/js/453.44407276.chunk.js": "/scaredcrow-1.0/static/js/453.44407276.chunk.js",
-    "static/media/Scaredcrow.png": "/scaredcrow-1.0/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
-    "index.html": "/scaredcrow-1.0/index.html",
-    "main.7141c1aa.css.map": "/scaredcrow-1.0/static/css/main.7141c1aa.css.map",
-    "main.c44cfe9b.js.map": "/scaredcrow-1.0/static/js/main.c44cfe9b.js.map",
-    "453.44407276.chunk.js.map": "/scaredcrow-1.0/static/js/453.44407276.chunk.js.map"
+    "main.css": "/static/css/main.7141c1aa.css",
+    "main.js": "/static/js/main.848cc09a.js",
+    "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
+    "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
+    "index.html": "/index.html",
+    "main.7141c1aa.css.map": "/static/css/main.7141c1aa.css.map",
+    "main.848cc09a.js.map": "/static/js/main.848cc09a.js.map",
+    "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7141c1aa.css",
-    "static/js/main.c44cfe9b.js"
+    "static/js/main.848cc09a.js"
   ]
 }
