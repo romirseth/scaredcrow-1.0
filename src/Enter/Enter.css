@@ -6,23 +6,24 @@
   --spacing: 10px;
 }
 
-.App {
+.Enter {
   text-align: center;
 }
 
-.App-logo {
+.Enter-logo {
   height: 40vmin;
-  pointer-events: none;
+  pointer-events: all;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .Enter-logo {
     animation: breathe infinite alternate 3s linear;
     /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
-.App-header {
+.Enter-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -33,7 +34,7 @@
   color: white;
 }
 
-.App-link {
+.Enter-link {
   color: #61dafb;
 }
 
@@ -41,14 +42,15 @@
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   border: mediumspringgreen solid 4px;
-  /* border-radius: 20px; */
   position: absolute;
   color: maroon;
   animation: slowfade infinite 10s linear;
   padding: 1.2%;
   cursor: pointer;
+  pointer-events: all;
 
   /* font-size: 58px; */
+  /* border-radius: 20px; */
   /* top: 400px; */
   /* animation: slowfade-alt infinite alternate 10s linear 5s; */
 }
@@ -56,15 +58,16 @@
 .come-in {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
-  /* border-radius: 20px; */
   position: absolute;
   color: mediumspringgreen;
   opacity: 0;
   animation: comeuppance infinite 10s linear;
   padding: 10px;
   cursor: pointer;
+  pointer-events: all;
 
   /* border: maroon solid 4px; */
+  /* border-radius: 20px; */
   /* font-size: 58px; */
   /* top: 405px; */
 }

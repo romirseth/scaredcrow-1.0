@@ -1,0 +1,20 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0; /* Remove default body margins */
+}
+
+.full-viewport-container {
+  align-content: center;
+  background-color: black;
+  min-height: 100vh; /* Use min-height to ensure it covers the viewport */
+  width: 100vw; /* Use vw units to cover the viewport width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.home-logo {
+    height: 40vmin;
+    padding-block: 1rem;
+    margin-bottom: 40px;
+}
