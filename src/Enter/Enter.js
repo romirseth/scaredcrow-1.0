@@ -1,6 +1,6 @@
 import './Enter.css';
 import '../index.css'
-import scaredcrow from '../images/Scaredcrow.png';
+import scaredcrow from '../_images/Scaredcrow.png';
 
 const navigateToHome = () => {
   console.log("navigateToHome");
