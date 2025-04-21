@@ -6,7 +6,7 @@ body,
 }
 
 .full-viewport-container {
-  align-content: center;
+  align-content: space-evenly;
   background-color: black;
   min-height: 100vh; /* Use min-height to ensure it covers the viewport */
   width: 100vw; /* Use vw units to cover the viewport width */
