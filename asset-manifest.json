@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.7141c1aa.css",
-    "main.js": "/static/js/main.78db55aa.js",
+    "main.css": "/static/css/main.0bfb375e.css",
+    "main.js": "/static/js/main.54514777.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
+    "static/media/FlyingDutchman.wav": "/static/media/FlyingDutchman.7b6efd707660bedf1791.wav",
     "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
+    "static/media/slowcrow.png": "/static/media/slowcrow.c1951f2ce11a3439ec86.png",
+    "static/media/spotify.png": "/static/media/spotify.d7c133b044286f870f22.png",
+    "static/media/apple.png": "/static/media/apple.53801dec90529c580a7e.png",
     "index.html": "/index.html",
-    "main.7141c1aa.css.map": "/static/css/main.7141c1aa.css.map",
-    "main.78db55aa.js.map": "/static/js/main.78db55aa.js.map",
+    "main.0bfb375e.css.map": "/static/css/main.0bfb375e.css.map",
+    "main.54514777.js.map": "/static/js/main.54514777.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7141c1aa.css",
-    "static/js/main.78db55aa.js"
+    "static/css/main.0bfb375e.css",
+    "static/js/main.54514777.js"
   ]
 }
