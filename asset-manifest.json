@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.10e1f512.css",
+    "main.css": "/static/css/main.3daf3476.css",
     "main.js": "/static/js/main.dd7de2fd.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
     "static/media/FlyingDutchman.wav": "/static/media/FlyingDutchman.7b6efd707660bedf1791.wav",
@@ -11,12 +11,12 @@
     "static/media/spotify.png": "/static/media/spotify.d7c133b044286f870f22.png",
     "static/media/apple.png": "/static/media/apple.53801dec90529c580a7e.png",
     "index.html": "/index.html",
-    "main.10e1f512.css.map": "/static/css/main.10e1f512.css.map",
+    "main.3daf3476.css.map": "/static/css/main.3daf3476.css.map",
     "main.dd7de2fd.js.map": "/static/js/main.dd7de2fd.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10e1f512.css",
+    "static/css/main.3daf3476.css",
     "static/js/main.dd7de2fd.js"
   ]
 }
