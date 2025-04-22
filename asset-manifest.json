@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8521eaf.css",
-    "main.js": "/static/js/main.54514777.js",
+    "main.css": "/static/css/main.10e1f512.css",
+    "main.js": "/static/js/main.dd7de2fd.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
     "static/media/FlyingDutchman.wav": "/static/media/FlyingDutchman.7b6efd707660bedf1791.wav",
+    "static/media/VeryVeryPunkFont-ZpZ0K.ttf": "/static/media/VeryVeryPunkFont-ZpZ0K.c5383a1a498ebc3a8199.ttf",
+    "static/media/AllAgesDemo-2DPX.ttf": "/static/media/AllAgesDemo-2DPX.7a2d9079e06fdc8914e8.ttf",
     "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
     "static/media/slowcrow.png": "/static/media/slowcrow.c1951f2ce11a3439ec86.png",
     "static/media/spotify.png": "/static/media/spotify.d7c133b044286f870f22.png",
     "static/media/apple.png": "/static/media/apple.53801dec90529c580a7e.png",
     "index.html": "/index.html",
-    "main.f8521eaf.css.map": "/static/css/main.f8521eaf.css.map",
-    "main.54514777.js.map": "/static/js/main.54514777.js.map",
+    "main.10e1f512.css.map": "/static/css/main.10e1f512.css.map",
+    "main.dd7de2fd.js.map": "/static/js/main.dd7de2fd.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8521eaf.css",
-    "static/js/main.54514777.js"
+    "static/css/main.10e1f512.css",
+    "static/js/main.dd7de2fd.js"
   ]
 }
