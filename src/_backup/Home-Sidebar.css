@@ -8,11 +8,6 @@
   src: url(AllAgesDemo-2DPX.ttf);
 }
 
-@font-face {
-  font-family: 'PixTimes';
-  src: url(PixelTimesBold.ttf);
-}
-
 html,
 body,
 #root {
@@ -58,39 +53,7 @@ body,
   height: 100vh;
   margin-left: 30px;
   text-align: -webkit-center;
-  width: 100vw;
 }
-
-.main-panel-grid {
-  font-family: 'PixTimes';
-  color: rgba(0, 250, 154, 1);
-  width: 100%;
-}
-
-.retro-nav-border {
-  border-top: 5px solid rgba(171, 170, 255, 1);
-  border-left: 5px solid rgba(171, 170, 255, 1);
-  border-right: 5px solid rgba(171, 170, 255, 1);
-}
-
-.retro-logos {
-  margin: 5px;
-  height: 22vh;
-  width: 14vw;
-}
-
-.retro-label-border {
-  text-align: center;
-  border-bottom: 5px solid rgba(171, 170, 255, 1);
-  border-left: 5px solid rgba(171, 170, 255, 1);
-  border-right: 5px solid rgba(171, 170, 255, 1);
-}
-
-.retro-label {
-  margin: 5px;
-  font-size: 24px;
-}
-
 
 .spotify-click {
   font-family: 'Punk';

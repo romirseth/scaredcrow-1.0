@@ -1,6 +1,12 @@
 import './Home.css';
 import '../index.css'
 import scaredcrow from '../_images/Scaredcrow.png';
+import crow from '../_images/bird_anim_01.gif';
+import duck from '../_images/dancing-duck.gif';
+import spotifygif from '../_images/spotifydrawing.gif';
+import smash from '../_images/rock1.gif';
+import shred from '../_images/rock2.gif';
+import camera from '../_images/picture-photo.gif';
 import spotify from '../_images/spotify.png'
 import youtube from '../_images/yt.jpg'
 import apple from '../_images/apple.png'
@@ -13,61 +19,54 @@ function Home() {
         <div class="stars"></div>
         <div class="twinkling"></div> 
         <div class="clouds"></div>
-        <div className='sidebar'>
-          <div style={{display: 'grid'}}>
-            <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 
-              className='spotify-click'>Spotify
-            </a>
-            <a href="https://www.youtube.com/@scaredcrowband-nc" 
-              className='youtube-click'>Youtube
-            </a>
-            <a href="https://music.apple.com/us/artist/scaredcrow/1809431092"
-              className='apple-click'>Apple
-            </a>
-          </div>
-          {/* <table style={{width: '100%'}}>
-            <tbody>
-              <tr style={{textAlign: '-webkit-center'}}>
-                <td>
-                  <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" style={{textDecoration: 'none', color: 'white'}}>
-                    <img src={spotify} className="streaming-logo" alt="logo"/>
-                  </a>
-                  <label className='clickables'>Spotify</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://www.youtube.com/@scaredcrowband-nc" style={{textDecoration: 'none', color: 'white'}}>
-                        <img src={youtube} className="youtube-logo" alt="logo"/>
-                  </a>
-                  <label className='clickables'>Spotify</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://music.apple.com/us/artist/scaredcrow/1809431092" style={{textDecoration: 'none', color: 'white'}}>
-                    <img src={apple} className="streaming-logo" alt="logo"/>
-                  </a>
-                  <label className='clickables'>Spotify</label>
-                </td>
-              </tr>
-            </tbody>
-          </table> */}
-        </div>
 
         <div className='main-panel'>
           <img src={scaredcrow} className="home-logo" alt="logo"/>
-          <div>
-          <iframe width="80%" height="315"
-            src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
+          <div className='main-panel-grid'>
+            <table>
+              <tr>
+                <td className='retro-nav-border'>
+                  <img src={crow} className="retro-logos" alt="logo"/>
+                </td>
+                <td className='retro-nav-border'>
+                  <img src={spotifygif} className="retro-logos" alt="logo" style={{height: '26vh', width: '18vw;', marginTop: '20px'}}/>
+                </td>
+                <td className='retro-nav-border'>
+                  <img src={smash} className="retro-logos" alt="logo" style={{height: '22vh', width: '18vw;'}}/>
+                </td>
+                <td className='retro-nav-border'>
+                  <img src={shred} className="retro-logos" alt="logo" style={{height: '26vh', width: '18vw;'}}/>
+                </td>
+                <td className='retro-nav-border'>
+                  <img src={camera} className="retro-logos" alt="logo" style={{marginTop: '40px'}}/>
+                </td>
+                <td className='retro-nav-border'>
+                  <img src={duck} className="retro-logos" alt="logo" style={{height: '18vh', width: '13vw;'}}/>
+                </td>
+              </tr>
+              <tr>
+                <td className='retro-label-border'><label className='retro-label'>Originals</label></td>
+                <td className='retro-label-border'><label className='retro-label'>Streaming</label></td>
+                <td className='retro-label-border'><label className='retro-label'>Live Performances</label></td>
+                <td className='retro-label-border'><label className='retro-label'>Covers</label></td>
+                <td className='retro-label-border'><label className='retro-label'>Photo Gallery</label></td>
+                <td className='retro-label-border'><label className='retro-label'>Get to know us!</label></td>
+              </tr>
+            </table>
           </div>
-          <br/>
-          <br/>
-          <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
+
+
+          {/* <div>
+            <iframe width="80%" height="315"
+              src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+            <br/>
+            <br/>
+            <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a> */}
         </div>
     </div>
   );
