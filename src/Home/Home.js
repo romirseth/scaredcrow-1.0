@@ -10,6 +10,9 @@ import flyingdutchman from '../_audio/FlyingDutchman.wav';
 function Home() {
   return (
     <div className='full-viewport-container'>
+        <div class="stars"></div>
+        <div class="twinkling"></div> 
+        <div class="clouds"></div>
         <div className='sidebar'>
           <div style={{display: 'grid'}}>
             <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 

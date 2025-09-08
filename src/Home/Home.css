@@ -25,6 +25,7 @@ body,
 }
 
 .sidebar {
+  z-index: 3;
   height: 100vh;
   background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%,
   rgba(171, 170, 255, 1) 70%, 
@@ -48,6 +49,7 @@ body,
 }
 
 .main-panel {
+  z-index: 3;
   height: 100vh;
   margin-left: 30px;
   text-align: -webkit-center;

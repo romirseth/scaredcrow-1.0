@@ -11,6 +11,7 @@
 }
 
 .Enter-logo {
+  z-index: 3;
   height: 40vmin;
   pointer-events: all;
   cursor: pointer;
@@ -39,16 +40,19 @@
 }
 
 .entersandman {
+  z-index: 3;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
-  border: mediumspringgreen solid 4px;
   position: absolute;
-  color: maroon;
+  color: #A800C4;
+  /* color: maroon; */
   animation: slowfade infinite 10s linear;
   padding: 1.2%;
   cursor: pointer;
   pointer-events: all;
 
+  /* color: maroon; */
+  /* border: mediumspringgreen solid 4px; */
   /* font-size: 58px; */
   /* border-radius: 20px; */
   /* top: 400px; */
@@ -56,6 +60,7 @@
 }
 
 .come-in {
+  z-index: 3;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   position: absolute;
