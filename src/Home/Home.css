@@ -134,7 +134,8 @@ body,
 }
 
 .home-logo {
-    height: 30vmin;
+    height: 27vmin;
+    /* height: 30vmin; */
     /* height: 35vmin; */
     padding-block: 1rem;
     /* margin-bottom: 20px; */
