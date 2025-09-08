@@ -11,9 +11,9 @@ const navigateToHome = () => {
 function Enter() {
   return (
     <div className="Enter">
-      <div class="stars"></div>
-      <div class="twinkling"></div> 
-      <div class="clouds"></div>
+      <div className="stars"></div>
+      <div className="twinkling"></div> 
+      <div className="clouds"></div>
       <header className="Enter-header" style={{backgroundColor: 'black', width: '100%', height: '100%'}}>  
         <img src={scaredcrow} className="Enter-logo" alt="logo" onClick={navigateToHome} style={{pointerEvents: "all"}}/>
         <div className="entersandman lg:text-5xl mb-6 rounded-2xl"  onClick={navigateToHome} style={{pointerEvents: "all"}}>SCAREDCROW</div>
