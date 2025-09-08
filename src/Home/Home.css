@@ -13,6 +13,11 @@
   src: url(PixelTimesBold.ttf);
 }
 
+@font-face {
+  font-family: 'PixTimesSoft';
+  src: url(PixelTimes.ttf);
+}
+
 html,
 body,
 #root {
@@ -154,8 +159,8 @@ body,
 .contact-us {
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Deadline';
-  font-size: 3vw;
-  color: maroon;
+  font-size: 20.5px;
+  color: rgba(0, 250, 154, 1);
   margin-top: 40px;
   text-decoration: underline;
   cursor: pointer;
