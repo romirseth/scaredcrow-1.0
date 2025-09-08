@@ -7,6 +7,8 @@ import spotifygif from '../_images/spotifydrawing.gif';
 import smash from '../_images/rock1.gif';
 import shred from '../_images/rock2.gif';
 import camera from '../_images/picture-photo.gif';
+import spookydivider from '../_images/spookydivider.gif';
+import candledivider from '../_images/candledivider.gif';
 import spotify from '../_images/spotify.png'
 import youtube from '../_images/yt.jpg'
 import apple from '../_images/apple.png'
@@ -22,6 +24,7 @@ function Home() {
 
         <div className='main-panel'>
           <img src={scaredcrow} className="home-logo" alt="logo"/>
+          <img src={candledivider} style={{marginBottom: '10px'}} alt="logo"/>
           <div className='main-panel-grid'>
             <table>
               <tr>
@@ -54,6 +57,7 @@ function Home() {
               </tr>
             </table>
           </div>
+          <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px'}} alt="logo"/>
 
 
           {/* <div>
