@@ -27,7 +27,7 @@ function Originals() {
             </div>
 
             <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%', marginTop: '20px'}}>
-              <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
+              <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us'>scaredcrowband@gmail com</a>
             </div>
             <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
           </div>
