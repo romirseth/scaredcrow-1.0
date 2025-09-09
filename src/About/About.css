@@ -1,0 +1,71 @@
+
+@font-face {
+  font-family: 'PixTimes';
+  src: url(PixelTimesBold.ttf);
+}
+
+@font-face {
+  font-family: 'PixTimesSoft';
+  src: url(PixelTimes.ttf);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0; /* Remove default body margins */
+}
+
+.full-viewport-container {
+  display: flex;
+  align-content: space-evenly;
+  background-color: black;
+  min-height: 100vh; /* Use min-height to ensure it covers the viewport */
+  width: 100vw; /* Use vw units to cover the viewport width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.full-viewport-container-mobile {
+  display: flex;
+  align-content: space-evenly;
+  background-color: black;
+  min-height: 100vh; /* Use min-height to ensure it covers the viewport */
+  width: 100vw; /* Use vw units to cover the viewport width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.main-panel {
+  z-index: 3;
+  height: 100vh;
+  margin-left: 30px;
+  text-align: -webkit-center;
+  width: 100vw;
+}
+
+.main-panel-mobile {
+  z-index: 3;
+  height: 100vh;
+  margin-left: 30px;
+  text-align: -webkit-center;
+  width: 100vw;
+}
+
+.home-logo {
+  height: 27vmin;
+  padding-block: 1rem;
+}
+
+.home-logo-mobile {
+  height: 35vmin;
+  padding-block: 1rem;
+}
+
+.contact-us {
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Deadline';
+  font-size: 20.5px;
+  color: rgba(0, 250, 154, 1);
+  margin-top: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}

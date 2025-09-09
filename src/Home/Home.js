@@ -9,13 +9,37 @@ import spotifygif from '../_images/spotifydrawing.gif';
 import smash from '../_images/rock1.gif';
 import shred from '../_images/rock2.gif';
 import camera from '../_images/picture-photo.gif';
-import spookydivider from '../_images/spookydivider.gif';
 import candledivider from '../_images/candledivider.gif';
-import spotify from '../_images/spotify.png'
-import youtube from '../_images/yt.jpg'
-import apple from '../_images/apple.png'
-import slowcrow from '../_images/slowcrow.png'
-import flyingdutchman from '../_audio/FlyingDutchman.wav';
+
+const navigateToOriginals = () => {
+  console.log("navigateToOriginals");
+  window.location.href = '/#originals';
+};
+
+const navigateToStreaming = () => {
+  console.log("navigateToStreaming");
+  window.location.href = '/#streaming';
+};
+
+const navigateToLive = () => {
+  console.log("navigateToLive");
+  window.location.href = '/#live';
+};
+
+const navigateToCovers = () => {
+  console.log("navigateToCovers");
+  window.location.href = '/#covers';
+};
+
+const navigateToPhotos= () => {
+  console.log("navigateToPhotos");
+  window.location.href = '/#photos';
+};
+
+const navigateToAbout = () => {
+  console.log("navigateToAbout");
+  window.location.href = '/#about';
+};
 
 function Home() {
   return (
@@ -39,32 +63,32 @@ function Home() {
                 <thead></thead>
                 <tbody>
                   <tr>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToOriginals}>
                       <img src={crow} className="retro-logos" alt="logo"/>
                     </td>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToStreaming}>
                       <img src={spotifygif} className="retro-logos" alt="logo" style={{marginTop: '20px'}}/>
                     </td>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToLive}>
                       <img src={smash} className="retro-logos" alt="logo"/>
                     </td>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToCovers}>
                       <img src={shred} className="retro-logo-shred" alt="logo"/>
                     </td>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToPhotos}>
                       <img src={camera} className="retro-logo-camera" alt="logo" style={{marginTop: '40px'}}/>
                     </td>
-                    <td className='retro-nav-border'>
+                    <td className='retro-nav-border' onClick={navigateToAbout}>
                       <img src={duck} className="retro-logo-duck" alt="logo"/>
                     </td>
                   </tr>
                   <tr>
-                    <td className='retro-label-border'><label className='retro-label'>Originals</label></td>
-                    <td className='retro-label-border'><label className='retro-label'>Streaming</label></td>
-                    <td className='retro-label-border'><label className='retro-label'>Live Performances</label></td>
-                    <td className='retro-label-border'><label className='retro-label'>Covers</label></td>
-                    <td className='retro-label-border'><label className='retro-label'>Photo Gallery</label></td>
-                    <td className='retro-label-border'><label className='retro-label'>Get to know us!</label></td>
+                    <td className='retro-label-border' onClick={navigateToOriginals}><label className='retro-label'>Originals</label></td>
+                    <td className='retro-label-border' onClick={navigateToStreaming}><label className='retro-label'>Streaming</label></td>
+                    <td className='retro-label-border' onClick={navigateToLive}><label className='retro-label'>Live Performances</label></td>
+                    <td className='retro-label-border' onClick={navigateToCovers}><label className='retro-label'>Covers</label></td>
+                    <td className='retro-label-border' onClick={navigateToPhotos}><label className='retro-label'>Photo Gallery</label></td>
+                    <td className='retro-label-border' onClick={navigateToAbout}><label className='retro-label'>Get to know us!</label></td>
                   </tr>
                 </tbody>
               </table>
@@ -99,27 +123,27 @@ function Home() {
           <div>
               <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToOriginals}>
             <img src={crow} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Originals</label>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToStreaming}>
             <img src={spotifygif} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Streaming</label>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToLive}>
             <img src={smash} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Live</label>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToCovers}>
             <img src={shred} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Covers</label>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToPhotos}>
             <img src={camera} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Photo Gallery</label>
           </div>
-          <div className='retro-container-mobile'>
+          <div className='retro-container-mobile' onClick={navigateToAbout}>
             <img src={duck} className="retro-logos-mobile" alt="logo"/>
             <label className='retro-label-mobile'>Get to know us!</label>
           </div>
