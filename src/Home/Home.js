@@ -31,7 +31,7 @@ function Home() {
             <div style={{display: 'flex'}}>
               <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'left'}} alt="logo"/>
               <label style={{fontFamily: 'PixTimesSoft', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '50%'}}>
-                Scaredcrow is a Grunge-Punk-Psychedelic band based in Raleigh, NC started in 2022 by Aiden Wall, Spencer Gagnon, Romir Seth, and Matt Matunis. Since coming together, we have performed live across the Triangle area. We are currently taking our next step and working towards releasing our debut album. Stay Tuned! 
+                Scaredcrow is a Grunge-Punk-Psychedelic band based in Raleigh, NC started in 2022 by Aiden Wall, Spencer Gagnon, Romir Seth, and Matt Matunis. Since coming together, we have performed live across the Triangle area. We are currently working towards releasing our debut album. Stay Tuned! 
               </label>
             </div>
             <div className='main-panel-grid'>
