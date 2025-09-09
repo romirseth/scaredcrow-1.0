@@ -100,16 +100,6 @@ function Home() {
               </div>
               <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'right'}} alt="logo"/>
             </div>
-
-            {/* <div>
-              <iframe width="80%" height="315"
-                src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
-            </div> */}
-
           </div>
       </div>
     </BrowserView>

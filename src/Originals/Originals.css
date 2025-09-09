@@ -16,7 +16,7 @@ body,
   margin: 0; /* Remove default body margins */
 }
 
-.full-viewport-container {
+.og-full-viewport-container {
   display: flex;
   align-content: space-evenly;
   background-color: black;
@@ -25,7 +25,7 @@ body,
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.full-viewport-container-mobile {
+.og-full-viewport-container-mobile {
   display: flex;
   align-content: space-evenly;
   background-color: black;
@@ -34,7 +34,7 @@ body,
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.main-panel {
+.og-main-panel {
   z-index: 3;
   height: 100vh;
   margin-left: 30px;
@@ -42,7 +42,7 @@ body,
   width: 100vw;
 }
 
-.main-panel-mobile {
+.og-main-panel-mobile {
   z-index: 3;
   height: 100vh;
   margin-left: 30px;
@@ -50,17 +50,17 @@ body,
   width: 100vw;
 }
 
-.home-logo {
+.og-home-logo {
   height: 27vmin;
   padding-block: 1rem;
 }
 
-.home-logo-mobile {
+.og-home-logo-mobile {
   height: 35vmin;
   padding-block: 1rem;
 }
 
-.contact-us {
+.og-contact-us {
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Deadline';
   font-size: 20.5px;
@@ -68,4 +68,14 @@ body,
   margin-top: 40px;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.og-email-mobile {
+  font-family: 'PixTimes';
+  color: 'rgba(171, 170, 255, 1)';
+  align-content: 'center'; 
+  font-size: 14px; 
+  width: 100%; 
+  margin-top: 5px; 
+  margin-left: -10px;
 }

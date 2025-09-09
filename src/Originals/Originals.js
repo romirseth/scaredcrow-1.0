@@ -8,15 +8,25 @@ function Originals() {
   return (
     <>
     <BrowserView>
-      <div className='full-viewport-container'>
+      <div className='og-full-viewport-container'>
           <div className="stars"></div>
           <div className="twinkling"></div> 
           <div className="clouds"></div>
 
-          <div className='main-panel'>
+          <div className='og-main-panel'>
             <img src={scaredcrow} className="home-logo" alt="logo"/>
             <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center'}} alt="logo"/>
-            <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%'}}>
+            
+            <div>
+              <iframe width="40%" height="275"
+                src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+
+            <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%', marginTop: '20px'}}>
               <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
             </div>
             <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
@@ -24,17 +34,28 @@ function Originals() {
       </div>
     </BrowserView>
     <MobileView>
-    <div className='full-viewport-container-mobile'>
+    <div className='og-full-viewport-container-mobile'>
         <div className="stars-mobile"></div>
         <div className="twinkling-mobile"></div> 
         <div className="clouds-mobile"></div>
-        <div className='main-panel-mobile'>
-          <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
+        <div className='og-main-panel-mobile'>
+          <img src={scaredcrow} className="og-home-logo-mobile" alt="logo"/>
           <div>
               <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
           </div>
-          <div className="email-mobile">
-                <a href="mailto:scaredcrowband@gmail.com" className='contact-us-mobile'>scaredcrowband@gmail com</a>
+
+          <div>
+            <iframe width="70%" height="300"
+              src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+
+
+          <div className="og-email-mobile">
+                <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us-mobile'>scaredcrowband@gmail com</a>
           </div>
           <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
         </div>
