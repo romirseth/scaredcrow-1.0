@@ -1,4 +1,4 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 import './Originals.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
@@ -25,11 +25,11 @@ function Originals() {
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
               </iframe>
             </div>
-
+            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
+            
             <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%', marginTop: '20px'}}>
               <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us'>scaredcrowband@gmail com</a>
             </div>
-            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
           </div>
       </div>
     </BrowserView>
@@ -52,12 +52,10 @@ function Originals() {
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
           </div>
-
-
+          <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
           <div className="og-email-mobile">
                 <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us-mobile'>scaredcrowband@gmail com</a>
           </div>
-          <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
         </div>
     </div>
     </MobileView>

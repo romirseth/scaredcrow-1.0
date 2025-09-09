@@ -1,13 +1,8 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 import './Streaming.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
 import candledivider from '../_images/candledivider.gif';
-import spotify from '../_images/spotify.png'
-import youtube from '../_images/yt.jpg'
-import apple from '../_images/apple.png'
-import slowcrow from '../_images/slowcrow.png'
-import flyingdutchman from '../_audio/FlyingDutchman.wav';
 
 function Streaming() {
   return (
@@ -35,11 +30,10 @@ function Streaming() {
                 </a>
                 </div>
             </div>
-            
+            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
             <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%'}}>
               <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
             </div>
-            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
           </div>
       </div>
     </BrowserView>

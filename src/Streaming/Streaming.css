@@ -62,11 +62,11 @@ body,
 
 .str-spotify-click {
   font-family: 'Punk';
-  font-size: 5vw;
+  font-size: 4vw;
   color: black;
   background-color: mediumspringgreen;
   text-align: center;
-  width: 30%;
+  width: 25%;
   justify-self: center;
   margin-top: 25px;
   rotate: -10deg;
@@ -87,13 +87,13 @@ body,
 
 .str-youtube-click {
   font-family: 'Punk';
-  font-size: 5vw;
+  font-size: 4vw;
   color: black;
   background-color: maroon;
   text-align: center;
   justify-self: center;
   margin-top: 25px;
-  width: 30%;
+  width: 25%;
   rotate: -10deg;
 }
 
@@ -112,11 +112,11 @@ body,
 
 .str-apple-click {
   font-family: 'Punk';
-  font-size: 5vw;
+  font-size: 4vw;
   color: white;
   background-color: palevioletred;
   text-align: center;
-  width: 30%;
+  width: 25%;
   justify-self: center;
   margin-left: 10px;
   margin-top: 25px;

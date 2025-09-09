@@ -1,4 +1,4 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 import './Home.css';
 import './Home-Mobile.css'
 import '../index.css'
