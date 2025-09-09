@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Punk';
+    src: url(VeryVeryPunkFont-ZpZ0K.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Deadline';
+    src: url(AllAgesDemo-2DPX.ttf);
+  }
+  
+  @font-face {
+    font-family: 'PixTimes';
+    src: url(PixelTimesBold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'PixTimesSoft';
+    src: url(PixelTimes.ttf);
+  }
+  
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0; /* Remove default body margins */
+  }
+  
+  .full-viewport-container-mobile {
+    display: flex;
+    align-content: space-evenly;
+    background-color: black;
+    min-height: 100vh; /* Use min-height to ensure it covers the viewport */
+    width: 100vw; /* Use vw units to cover the viewport width */
+    min-height: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .main-panel-mobile {
+    z-index: 3;
+    height: 100vh;
+    margin-left: 30px;
+    text-align: -webkit-center;
+    width: 100vw;
+  }
+
+  .home-logo-mobile {
+    height: 35vmin;
+    margin-top: 10px;
+  }  
+  
+  .main-panel-grid-mobile {
+    font-family: 'PixTimes';
+    color: rgba(0, 250, 154, 1);
+    width: 100%;
+  }
+
+  .retro-container-mobile {
+    font-family: 'PixTimes';
+    border: 5px solid rgba(171, 170, 255, 1);
+    width: 40vmin;
+    margin-right: 10px;
+    margin-bottom: 18px;
+  }
+
+  .retro-logos-mobile {
+    height: 13vh;
+    width: 31vw;
+  }
+
+  .retro-label-mobile {
+    width: 31px;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(0, 250, 154, 1);
+  }
+
+  .contact-us-mobile {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Deadline';
+    font-size: 14px;
+    color: rgba(0, 250, 154, 1);
+    margin-top: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .email-mobile {
+    font-family: 'PixTimes';
+    color: 'rgba(171, 170, 255, 1)';
+    align-content: 'center'; 
+    font-size: 14px; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-left: -10px;
+  }
+  

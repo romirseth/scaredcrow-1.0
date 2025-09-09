@@ -42,3 +42,61 @@
     opacity: .4;
     animation:move-clouds-back 200s linear infinite;
 }
+
+.stars-mobile, .twinkling-mobile, .clouds-mobile {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars-mobile {
+  background:#000 url(greensky.webp) repeat top center;
+  z-index:0;
+}
+
+.twinkling-mobile{
+  background:transparent url(twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds-mobile{
+    background:transparent url(clouds.png) repeat top center;
+    z-index:2;
+    opacity: .4;
+    animation:move-clouds-back 200s linear infinite;
+}
+
+.stars-mobile-home, .twinkling-mobile-home, .clouds-mobile-home {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:200vh;
+  display:block;
+}
+
+.stars-mobile-home {
+  background:#000 url(greensky.webp) repeat top center;
+  z-index:0;
+}
+
+.twinkling-mobile-home {
+  background:transparent url(twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds-mobile-home {
+    background:transparent url(clouds.png) repeat top center;
+    z-index:2;
+    opacity: .4;
+    animation:move-clouds-back 200s linear infinite;
+}

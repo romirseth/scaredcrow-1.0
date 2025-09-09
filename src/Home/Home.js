@@ -1,5 +1,6 @@
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import './Home.css';
+import './Home-Mobile.css'
 import '../index.css'
 import scaredcrow from '../_images/Scaredcrow.png';
 import crow from '../_images/bird_anim_01.gif';
@@ -89,7 +90,47 @@ function Home() {
       </div>
     </BrowserView>
     <MobileView>
-        <h1>This is rendered only on mobile</h1>
+    <div className='full-viewport-container-mobile'>
+        <div className="stars-mobile-home"></div>
+        <div className="twinkling-mobile-home"></div> 
+        <div className="clouds-mobile-home"></div>
+        <div className='main-panel-mobile'>
+          <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
+          <div>
+              <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={crow} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Originals</label>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={spotifygif} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Streaming</label>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={smash} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Live</label>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={shred} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Covers</label>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={camera} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Photo Gallery</label>
+          </div>
+          <div className='retro-container-mobile'>
+            <img src={duck} className="retro-logos-mobile" alt="logo"/>
+            <label className='retro-label-mobile'>Get to know us!</label>
+          </div>
+          
+          <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
+          <div className="email-mobile">
+                <a href="mailto:scaredcrowband@gmail.com" className='contact-us-mobile'>scaredcrowband@gmail com</a>
+          </div>
+
+        </div>
+    </div>
     </MobileView>
 
     </>
