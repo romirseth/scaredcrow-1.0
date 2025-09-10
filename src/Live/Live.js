@@ -1,8 +1,12 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 import './Live.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
 import candledivider from '../_images/candledivider.gif';
+import understanding from '../_images/Understanding.JPG';
+import guitar from '../_images/Guitar.JPG';
+import matt from '../_images/Matt.JPG';
+
 
 function Live() {
   return (
@@ -15,11 +19,34 @@ function Live() {
 
           <div className='main-panel'>
             <img src={scaredcrow} className="home-logo" alt="logo"/>
-            <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center'}} alt="logo"/>
-            <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%'}}>
-              <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
+            {/* <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
+            
+            <div className="caption">
+              <label className="caption-label">Black Magic Woman - December 6 2024</label>
             </div>
-            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
+            <div className="carousel">
+                <img className="previous" src={guitar} alt="logo"></img>
+                <img className="nowplaying" src={understanding} alt="logo"/>
+                <img className="next" src={matt} alt="logo"></img>
+            </div>
+            {/* <img src={candledivider} style={{transform: 'rotate(180deg)', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
+
+            <div className='player-controls'>
+                <div className="next-prev">
+                  <div className="solid-prev"></div>
+                  <div className="solid-prev2"></div>
+                </div>
+                <div className="solid-play"></div>
+                <div className="next-prev">
+                  <div className="solid-next"></div>
+                  <div className="solid-next"></div>
+                </div>
+            </div>
+            
+            {/* <img src={candledivider} style={{transform: 'rotate(180deg)', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
+            {/* <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%'}}>
+              <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
+            </div> */}
           </div>
       </div>
     </BrowserView>
