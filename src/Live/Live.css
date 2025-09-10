@@ -63,9 +63,9 @@ body,
 .lv-contact-us {
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Deadline';
-  font-size: 20.5px;
+  font-size: 16px;
   color: rgba(171, 170, 255, 1);
-  margin-top: 40px;
+  margin-top: 50px;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -75,7 +75,7 @@ body,
 }
 
 .caption {
-  margin: 20px;
+  margin: 15px;
 }
 
 .caption-label {
@@ -104,16 +104,29 @@ body,
   margin-top: 60px;
 }
 
+.play-time {
+    border-top: 10px solid rgba(171, 170, 255, 1); /* Change color and thickness */
+    margin: 30px 10px 0px 10px; /* Adjust spacing */
+    width: 375px;
+}
+
+.progress-bar {
+    border-top: 5px solid rgba(0, 250, 154, 1); /* Change color and thickness */
+    margin: 30px 0px 0px 0px; /* Adjust spacing */
+    width: 375px;
+}
+
 .player-controls {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  margin-block: 55px;
+  margin-block: 30px;
 }
 
 .next-prev {
   display: inline-flex;
   margin-inline: 15px;
+  margin-bottom: 30px;
 }
 
 .solid-play {
