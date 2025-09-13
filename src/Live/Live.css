@@ -29,7 +29,7 @@ body,
   display: flex;
   align-content: space-evenly;
   background-color: black;
-  min-height: 100vh; /* Use min-height to ensure it covers the viewport */
+  min-height: 115vh; /* Use min-height to ensure it covers the viewport */
   width: 100vw; /* Use vw units to cover the viewport width */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
@@ -45,7 +45,7 @@ body,
 .lv-main-panel-mobile {
   z-index: 3;
   height: 100vh;
-  margin-left: 30px;
+  margin-left: 0px;
   text-align: -webkit-center;
   width: 100vw;
 }

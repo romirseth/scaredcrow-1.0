@@ -1,3 +1,4 @@
+import { BrowserView, MobileView } from "react-device-detect";
 import '../AudioPlayer/Player.css';
 
 const ProgressBar = ({ progressBarRef, audioRef, timeProgress, duration }) => {
@@ -21,15 +22,31 @@ const ProgressBar = ({ progressBarRef, audioRef, timeProgress, duration }) => {
     };
 
     return (
-    <div className="plr-progress">
-        <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(timeProgress)}</span>
-        <input type="range" className="plr-range" 
-            ref={progressBarRef}
-            defaultValue="0"
-            onChange={handleProgressChange}
-        />
-        <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(duration)}</span>
-    </div>
+        <>
+        <BrowserView>
+            <div className="plr-progress">
+                <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(timeProgress)}</span>
+                <input type="range" className="plr-range" 
+                    ref={progressBarRef}
+                    defaultValue="0"
+                    onChange={handleProgressChange}
+                />
+                <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(duration)}</span>
+            </div>
+        </BrowserView>
+        <MobileView>
+            <div className="plr-progress">
+                <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(timeProgress)}</span>
+                <input type="range" className="plr-range-mobile" 
+                    ref={progressBarRef}
+                    defaultValue="0"
+                    onChange={handleProgressChange}
+                />
+                <span style={{color: 'rgba(171, 170, 255, 1)', fontFamily: 'PixTimes'}}>{formatTime(duration)}</span>
+            </div>
+        </MobileView>
+        </>
+
     );
     
 };

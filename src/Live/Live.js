@@ -1,130 +1,122 @@
+import { useRef, useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
+import { tracks } from './LiveTracks.js';
+import '../AudioPlayer/Player.css';
 import './Live.css';
 import '../index.css';
 
-// global imports
-import Player from '../AudioPlayer/AudioPlayer.js';
+// components / resources imports
+import DisplayTrack from '../AudioPlayer/DisplayTrack.js';
+import Controls from '../AudioPlayer/Controls.js';
+import ProgressBar from '../AudioPlayer/ProgressBar.js';
 import scaredcrow from '../_images/Scaredcrow.png';
 import candledivider from '../_images/candledivider.gif';
 
-// audio files
-import LastNightLive from '../_audio/LastNightLive.mp3';
-import BlackMagic from '../_audio/BlackMagicWoman.mp3';
-import HotelCali from '../_audio/HotelCali.mp3';
-
-// audio thumbnails
-import understanding from '../_images/spencer and aiden.JPG';
-import guitar from '../_images/Guitar.JPG';
-import matt from '../_images/Matt.JPG';
-import AudioPlayer from "../AudioPlayer/AudioPlayer.js";
-
-
-export const tracks = [
-  {
-    id: 0,
-    title: 'Where Did You Sleep Last Night',
-    src: LastNightLive,
-    date: 'December 6 2024',
-    thumbnail: understanding,
-  },
-  {
-    id: 1,
-    title: 'Black Magic Woman',
-    src: BlackMagic,
-    date: 'December 6 2024',
-    thumbnail: guitar,
-  },
-  {
-    id: 2,
-    title: 'Hotel California',
-    src: HotelCali,
-    date: 'December 6 2024',
-    thumbnail: matt,
-  },
-];
-
-
 function Live() {
-  return (
-    <>
-    <BrowserView>
-      <div className='lv-full-viewport-container'>
+    const [trackIndex, setTrackIndex] = useState(0);
+    const [prevTrackIndex, setPrevTrackIndex] = useState(2);
+    const [nextTrackIndex, setNextTrackIndex] = useState(1);
+    const [currentTrack, setCurrentTrack] = useState(tracks[trackIndex]);
+    const [previousTrack, setPreviousTrack] = useState(tracks[prevTrackIndex]);
+    const [nextTrack, setNextTrack] = useState(tracks[nextTrackIndex]);
+    const [timeProgress, setTimeProgress] = useState(0);
+    const [duration, setDuration] = useState(0);
+
+    // reference
+    const progressBarRef = useRef();
+    const audioRef = useRef();
+
+    return (
+      <>
+      <BrowserView>
+        <div className='lv-full-viewport-container'>
+            <div className="stars"></div>
+            <div className="twinkling"></div> 
+            <div className="clouds"></div>
+
+            <div className='lv-main-panel'>
+              <img src={scaredcrow} className="lv-home-logo" alt="logo"/>
+              <div>
+                  <DisplayTrack {...{ 
+                      currentTrack, 
+                      previousTrack, 
+                      nextTrack, 
+                      audioRef, 
+                      setDuration, 
+                      progressBarRef 
+                  }} />
+                  <ProgressBar {...{ 
+                      progressBarRef, 
+                      audioRef, 
+                      timeProgress, 
+                      duration 
+                  }}/>
+                  <Controls {...{ 
+                      audioRef, 
+                      progressBarRef, 
+                      duration, 
+                      setTimeProgress, 
+
+                      tracks,
+                      trackIndex,
+                      setTrackIndex,
+                      setCurrentTrack,
+
+                      setPreviousTrack,
+                      setPrevTrackIndex,
+                      setNextTrack,
+                      setNextTrackIndex
+                  }} />
+              </div>
+            </div>
+        </div>
+      </BrowserView>
+      <MobileView>
+      <div className='lv-full-viewport-container-mobile'>
           <div className="stars"></div>
           <div className="twinkling"></div> 
           <div className="clouds"></div>
+          <div className='lv-main-panel-mobile'>
+            <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
+            <div>
+                <div>
+                  <DisplayTrack {...{ 
+                      currentTrack, 
+                      previousTrack, 
+                      nextTrack, 
+                      audioRef, 
+                      setDuration, 
+                      progressBarRef 
+                  }} />
+                  <ProgressBar {...{ 
+                      progressBarRef, 
+                      audioRef, 
+                      timeProgress, 
+                      duration 
+                  }}/>
+                  <Controls {...{ 
+                      audioRef, 
+                      progressBarRef, 
+                      duration, 
+                      setTimeProgress, 
 
-          <div className='lv-main-panel'>
-            <img src={scaredcrow} className="lv-home-logo" alt="logo"/>
-            {/* <Player /> */}
-            <AudioPlayer />
+                      tracks,
+                      trackIndex,
+                      setTrackIndex,
+                      setCurrentTrack,
 
-            
-            {/* <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
-            
-            {/* <div className="caption">
-              <label className="caption-label">Where Did You Sleep Last Night - December 6 2024</label>
+                      setPreviousTrack,
+                      setPrevTrackIndex,
+                      setNextTrack,
+                      setNextTrackIndex
+                  }} />
+              </div>
             </div>
-            <div className="carousel">
-                <img className="previous" src={guitar} alt="logo"></img>
-                <img className="nowplaying" src={understanding} alt="logo"/>
-                <img className="next" src={matt} alt="logo"></img>
-            </div> */}
-            {/* <img src={candledivider} style={{transform: 'rotate(180deg)', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
-
-            {/* <div className="progress-bar"></div> */}
-            {/* <div className="play-time"></div> */}
-
-            {/* <div>
-              <audio controls>
-                <source
-                  id="audio-player"
-                  name="audio-player"
-                  src={LastNightLive}
-                  type="audio/mp3"
-                /> */}
-                {/* Fallback content */}
-                {/* Your browser does not support the audio element. */}
-              {/* </audio>
-            </div> */}
-
-            {/* <div className='player-controls'>
-                <div className="next-prev">
-                  <div className="solid-prev"></div>
-                  <div className="solid-prev2"></div>
-                </div>
-                <button className="solid-play"></button>
-                <div className="next-prev">
-                  <div className="solid-next"></div>
-                  <div className="solid-next"></div>
-                </div>
-            </div> */}
-            
-            {/* <img src={candledivider} style={{transform: 'rotate(180deg)', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
-            {/* <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '16px', width: '60%'}}>
-              <a href="mailto:scaredcrowband@gmail.com" className='lv-contact-us'>scaredcrowband@gmail com</a>
-            </div> */}
           </div>
       </div>
-    </BrowserView>
-    <MobileView>
-    <div className='full-viewport-container-mobile'>
-        <div className="stars-mobile"></div>
-        <div className="twinkling-mobile"></div> 
-        <div className="clouds-mobile"></div>
-        <div className='main-panel-mobile'>
-          <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
-          <div>
-              <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
-          </div>
-          <div className="email-mobile">
-                <a href="mailto:scaredcrowband@gmail.com" className='contact-us-mobile'>scaredcrowband@gmail com</a>
-          </div>
-          <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
-        </div>
-    </div>
-    </MobileView>
-    </>
-  );
+      </MobileView>
+      </>
+    );
 }
 
 export default Live;

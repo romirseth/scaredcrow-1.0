@@ -11,6 +11,11 @@
   color:rgba(0, 250, 154, 1);
 }
 
+.plr-track-info-mobile {
+  font-family: 'PixTimes';
+  color:rgba(0, 250, 154, 1);
+}
+
 .plr-carousel {
   display: inline-flex;
 }
@@ -18,6 +23,13 @@
 .plr-nowplaying {
   width: 284px;
   height: 426px;
+  border: 5px solid rgba(0, 250, 154, 1);
+  margin-inline: 45px;
+}
+
+.plr-nowplaying-mobile {
+  width: 266px;
+  height: 400px;
   border: 5px solid rgba(0, 250, 154, 1);
   margin-inline: 45px;
 }
@@ -55,6 +67,11 @@
 .plr-range {
     margin-inline: 10px;
     width: 300px;
+}
+
+.plr-range-mobile {
+    margin-inline: 10px;
+    width: 250px;
 }
 
 input[type="range"] {

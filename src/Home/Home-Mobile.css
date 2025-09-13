@@ -25,7 +25,7 @@
     margin: 0; /* Remove default body margins */
   }
   
-  .full-viewport-container-mobile {
+  .hm-full-viewport-container-mobile {
     display: flex;
     align-content: space-evenly;
     background-color: black;
@@ -35,26 +35,26 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
   
-  .main-panel-mobile {
+  .hm-main-panel-mobile {
     z-index: 3;
     height: 100vh;
-    margin-left: 30px;
+    margin-left: 15px;
     text-align: -webkit-center;
     width: 100vw;
   }
 
-  .home-logo-mobile {
+  .hm-home-logo-mobile {
     height: 35vmin;
     margin-top: 10px;
   }  
   
-  .main-panel-grid-mobile {
+  .hm-main-panel-grid-mobile {
     font-family: 'PixTimes';
     color: rgba(0, 250, 154, 1);
     width: 100%;
   }
 
-  .retro-container-mobile {
+  .hm-retro-container-mobile {
     font-family: 'PixTimes';
     border: 5px solid rgba(171, 170, 255, 1);
     width: 40vmin;
@@ -62,19 +62,19 @@
     margin-bottom: 18px;
   }
 
-  .retro-logos-mobile {
+  .hm-retro-logos-mobile {
     height: 13vh;
     width: 31vw;
   }
 
-  .retro-label-mobile {
+  .hm-retro-label-mobile {
     width: 31px;
     font-size: 24px;
     text-align: center;
     color: rgba(0, 250, 154, 1);
   }
 
-  .contact-us-mobile {
+  .hm-contact-us-mobile {
     /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Deadline';
     font-size: 14px;
@@ -84,7 +84,7 @@
     cursor: pointer;
   }
 
-  .email-mobile {
+  .hm-email-mobile {
     font-family: 'PixTimes';
     color: 'rgba(171, 170, 255, 1)';
     align-content: 'center'; 

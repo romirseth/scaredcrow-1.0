@@ -104,43 +104,43 @@ function Home() {
       </div>
     </BrowserView>
     <MobileView>
-    <div className='full-viewport-container-mobile'>
+    <div className='hm-full-viewport-container-mobile'>
         <div className="stars-mobile-home"></div>
         <div className="twinkling-mobile-home"></div> 
         <div className="clouds-mobile-home"></div>
-        <div className='main-panel-mobile'>
-          <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
+        <div className='hm-main-panel-mobile'>
+          <img src={scaredcrow} className="hm-home-logo-mobile" alt="logo"/>
           <div>
               <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToOriginals}>
-            <img src={crow} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Originals</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToOriginals}>
+            <img src={crow} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Originals</label>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToStreaming}>
-            <img src={spotifygif} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Streaming</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToStreaming}>
+            <img src={spotifygif} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Streaming</label>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToLive}>
-            <img src={smash} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Live</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToLive}>
+            <img src={smash} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Live</label>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToCovers}>
-            <img src={shred} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Covers</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToCovers}>
+            <img src={shred} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Covers</label>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToPhotos}>
-            <img src={camera} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Photo Gallery</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToPhotos}>
+            <img src={camera} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Photo Gallery</label>
           </div>
-          <div className='retro-container-mobile' onClick={navigateToAbout}>
-            <img src={duck} className="retro-logos-mobile" alt="logo"/>
-            <label className='retro-label-mobile'>Get to know us!</label>
+          <div className='hm-retro-container-mobile' onClick={navigateToAbout}>
+            <img src={duck} className="hm-retro-logos-mobile" alt="logo"/>
+            <label className='hm-retro-label-mobile'>Get to know us!</label>
           </div>
           
           <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
-          <div className="email-mobile">
-                <a href="mailto:scaredcrowband@gmail.com" className='contact-us-mobile'>scaredcrowband@gmail com</a>
+          <div className="hm-email-mobile">
+                <a href="mailto:scaredcrowband@gmail.com" className='hm-contact-us-mobile'>scaredcrowband@gmail com</a>
           </div>
 
         </div>
