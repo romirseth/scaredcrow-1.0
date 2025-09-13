@@ -14,8 +14,8 @@ import {
 const Controls = ({ 
     audioRef, progressBarRef, duration, setTimeProgress,
     tracks, trackIndex, setTrackIndex, setCurrentTrack,
-    prevTrackIndex, setPreviousTrack, setPrevTrackIndex,
-    nextTrackIndex, setNextTrack, setNextTrackIndex
+    setPreviousTrack, setPrevTrackIndex,
+    setNextTrack, setNextTrackIndex
  }) => {
     const playAnimationRef = useRef();
 
@@ -25,12 +25,16 @@ const Controls = ({
         setIsPlaying((prev) => !prev);
     };
 
-    const skipForward = () => {};
+    const skipForward = () => {
+    audioRef.current.currentTime += 15;
+    };
 
-    const skipBackward = () => {};
+    const skipBackward = () => {
+    audioRef.current.currentTime -= 15;
+    };
 
     const handlePrevious = () => {
-        if(trackIndex == 0) {
+        if(trackIndex === 0) {
             setPrevTrackIndex(tracks.length - 2);
             setPreviousTrack(tracks[tracks.length - 2]);
 
@@ -40,7 +44,7 @@ const Controls = ({
             setNextTrackIndex(0);
             setNextTrack(tracks[0]);
         }
-        else if(trackIndex == 1) {
+        else if(trackIndex === 1) {
             setPrevTrackIndex(tracks.length - 1);
             setPreviousTrack(tracks[tracks.length - 1]);
 
@@ -73,7 +77,7 @@ const Controls = ({
             setNextTrackIndex(1);
             setNextTrack(tracks[1]);
         } 
-        else if(trackIndex == 0) {
+        else if(trackIndex === 0) {
             setPrevTrackIndex(0);
             setPreviousTrack(tracks[0]);
 
