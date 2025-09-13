@@ -22,23 +22,23 @@ import AudioPlayer from "../AudioPlayer/AudioPlayer.js";
 export const tracks = [
   {
     id: 0,
-    title: 'Where Did You Sleep Last Night - December 6 2024',
+    title: 'Where Did You Sleep Last Night',
     src: LastNightLive,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: understanding,
   },
   {
     id: 1,
-    title: 'Black Magic Woman - December 6 2024',
+    title: 'Black Magic Woman',
     src: BlackMagic,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: guitar,
   },
   {
     id: 2,
-    title: 'Hotel California - December 6 2024',
+    title: 'Hotel California',
     src: HotelCali,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: matt,
   },
 ];
@@ -55,6 +55,10 @@ function Live() {
 
           <div className='lv-main-panel'>
             <img src={scaredcrow} className="lv-home-logo" alt="logo"/>
+            {/* <Player /> */}
+            <AudioPlayer />
+
+            
             {/* <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
             
             {/* <div className="caption">
@@ -94,14 +98,11 @@ function Live() {
                   <div className="solid-next"></div>
                 </div>
             </div> */}
-
-            {/* <Player /> */}
-            <AudioPlayer />
             
             {/* <img src={candledivider} style={{transform: 'rotate(180deg)', justifySelf: 'center', width: '300px'}} alt="logo"/> */}
-            <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '16px', width: '60%'}}>
+            {/* <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '16px', width: '60%'}}>
               <a href="mailto:scaredcrowband@gmail.com" className='lv-contact-us'>scaredcrowband@gmail com</a>
-            </div>
+            </div> */}
           </div>
       </div>
     </BrowserView>

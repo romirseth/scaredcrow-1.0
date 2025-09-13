@@ -11,23 +11,23 @@ import matt from '../_images/Matt.JPG';
 export const tracks = [
   {
     id: 0,
-    title: 'Where Did You Sleep Last Night - December 6 2024',
+    title: 'Where Did You Sleep Last Night',
     src: LastNightLive,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: understanding,
   },
   {
     id: 1,
-    title: 'Black Magic Woman - December 6 2024',
+    title: 'Black Magic Woman',
     src: BlackMagic,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: guitar,
   },
   {
     id: 2,
-    title: 'Hotel California - December 6 2024',
+    title: 'Hotel California',
     src: HotelCali,
-    author: 'Scaredcrow',
+    date: 'December 6 2024',
     thumbnail: matt,
   },
 ];

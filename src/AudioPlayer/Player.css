@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 
+.plr-caption {
+  margin: 10px;
+}
+
+.plr-track-info {
+  font-family: 'PixTimes';
+  color:rgba(0, 250, 154, 1);
+}
+
+.plr-carousel {
+  display: inline-flex;
+}
+
 .plr-nowplaying {
   width: 284px;
   height: 426px;
@@ -10,9 +23,19 @@
   margin-inline: 45px;
 }
 
+.plr-previous-track {
+  width: 200px;
+  height: 300px;
+  border: 5px solid rgba(171, 170, 255, 1);
+  margin-top: 60px;
+}
 
-
-
+.plr-next-track {
+  width: 200px;
+  height: 300px;
+  border: 5px solid rgba(171, 170, 255, 1);
+  margin-top: 60px;
+}
 
 .plr-play-time {
     border-top: 10px solid rgba(171, 170, 255, 1); /* Change color and thickness */
@@ -26,11 +49,48 @@
     width: 375px;
 }
 
+.plr-progress {
+    margin-top: 20px;
+}
+
+.plr-range {
+    margin-inline: 10px;
+    width: 300px;
+}
+
+input[type="range"] {
+  --range-progress: 0;
+  accent-color: rgba(0, 250, 154, 1);
+  /* ... */
+}
+
+input[type="range"]::before {
+  /* ... */
+  background: rgba(171, 170, 255, 1);
+  width: var(--range-progress);
+  /* ... */
+}
+
+/* For Chrome, Safari, Opera, and Edge  */
+/* input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(171, 170, 255, 1);
+    height: 0.8rem;
+} */
+/* For Firefox */
+/* input[type="range"]::-moz-range-track {
+    background: rgba(171, 170, 255, 1);
+    height: 0.8rem;
+} */
+
+.plr-time {
+    color: rgba(0, 250, 154, 1)
+}
+
 .plr-player-controls {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  margin-block: 30px;
+  margin-block: 15px;
 }
 
 .plr-play {

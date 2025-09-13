@@ -1,28 +1,60 @@
 import { BsMusicNoteBeamed } from 'react-icons/bs';
+import '../AudioPlayer/Player.css';
 
-const DisplayTrack = ({ currentTrack, audioRef }) => {
-console.log("Current Track :>> " , currentTrack);
-  return (
-    <div>
-      <audio src={currentTrack.src} ref={audioRef} />
-      <div className="audio-info">
-        <div className="plr-nowplaying">
-          {currentTrack.thumbnail ? (
-            <img src={currentTrack.thumbnail} alt="audio avatar" />
-          ) : (
-            <div className="icon-wrapper">
-              <span className="audio-icon">
-                <BsMusicNoteBeamed />
-              </span>
+const DisplayTrack = ({ currentTrack, previousTrack, nextTrack, audioRef, setDuration, progressBarRef, }) => {
+
+    console.log("Current Track :>> " , currentTrack);
+
+    const onLoadedMetadata = () => {
+        const seconds = audioRef.current.duration;
+        setDuration(seconds);
+        progressBarRef.current.max = seconds;
+    };
+
+    return (
+        <div>
+            <audio src={currentTrack.src} ref={audioRef} onLoadedMetadata={onLoadedMetadata}/>
+            <div className="plr-caption">
+                <p className="plr-track-info">{currentTrack.title}</p>
+                <p className="plr-track-info">{currentTrack.date}</p>
             </div>
-          )}
+            <div className='plr-carousel'>
+                    <div className="plr-previous-track">
+                    {previousTrack.thumbnail ? (
+                    <img src={previousTrack.thumbnail} alt="audio avatar" />
+                    ) : (
+                    <div className="icon-wrapper">
+                        <span className="audio-icon">
+                        <BsMusicNoteBeamed />
+                        </span>
+                    </div>
+                    )}
+                </div>
+                <div className="plr-nowplaying">
+                    {currentTrack.thumbnail ? (
+                    <img src={currentTrack.thumbnail} alt="audio avatar" />
+                    ) : (
+                    <div className="icon-wrapper">
+                        <span className="audio-icon">
+                        <BsMusicNoteBeamed />
+                        </span>
+                    </div>
+                    )}
+                </div>
+                <div className="plr-next-track">
+                    {nextTrack.thumbnail ? (
+                    <img src={nextTrack.thumbnail} alt="audio avatar" />
+                    ) : (
+                    <div className="icon-wrapper">
+                        <span className="audio-icon">
+                        <BsMusicNoteBeamed />
+                        </span>
+                    </div>
+                    )}
+                </div>
+            </div>
+            
         </div>
-        <div className="text">
-          <p className="title">{currentTrack.title}</p>
-          <p>{currentTrack.author}</p>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 export default DisplayTrack;
