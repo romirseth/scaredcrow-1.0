@@ -1,6 +1,7 @@
 ## Dev Notes
 
 ## DEPLOY TO GITHUB PAGES
+Check in latest code
 Ensure you are on the branch you want to deploy, then run command:
 ## `npm run deploy -- -m "Deploy Scaredcrow app to GitHub Pages"`
 AFTER COMMAND FINISHES 

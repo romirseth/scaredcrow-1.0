@@ -75,7 +75,7 @@ function Live() {
           <div className="twinkling"></div> 
           <div className="clouds"></div>
           <div className='lv-main-panel-mobile'>
-            <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
+            {/* <img src={scaredcrow} className="home-logo-mobile" alt="logo"/> */}
             <div>
                 <div>
                   <DisplayTrack {...{ 
