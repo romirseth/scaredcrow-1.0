@@ -87,10 +87,11 @@ input[type="range"]::before {
 }
 
 .plr-player-controls {
-  width: 100%;
+  /* width: 100%; */
   display: inline-flex;
   justify-content: center;
   margin-block: 15px;
+  margin-left: 10px;
 }
 
 .plr-play {
