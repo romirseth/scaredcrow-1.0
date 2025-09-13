@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
 import { tracks } from './LiveTracks.js';
-import '../AudioPlayer/Player.css';
 import './Live.css';
 import '../index.css';
 
@@ -10,7 +9,6 @@ import DisplayTrack from '../AudioPlayer/DisplayTrack.js';
 import Controls from '../AudioPlayer/Controls.js';
 import ProgressBar from '../AudioPlayer/ProgressBar.js';
 import scaredcrow from '../_images/Scaredcrow.png';
-import candledivider from '../_images/candledivider.gif';
 
 function Live() {
     const [trackIndex, setTrackIndex] = useState(0);

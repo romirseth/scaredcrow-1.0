@@ -3,9 +3,7 @@ import { BsMusicNoteBeamed } from 'react-icons/bs';
 import '../AudioPlayer/Player.css';
 
 const DisplayTrack = ({ currentTrack, previousTrack, nextTrack, audioRef, setDuration, progressBarRef, }) => {
-
-    console.log("Current Track :>> " , currentTrack);
-
+    
     const onLoadedMetadata = () => {
         const seconds = audioRef.current.duration;
         setDuration(seconds);
