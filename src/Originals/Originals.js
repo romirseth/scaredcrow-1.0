@@ -72,9 +72,9 @@ function Originals() {
       </BrowserView>
       <MobileView>
       <div className='og-full-viewport-container-mobile'>
-          <div className="stars"></div>
-          <div className="twinkling"></div> 
-          <div className="clouds"></div>
+          <div className="stars-mobile"></div>
+          <div className="twinkling-mobile"></div> 
+          <div className="clouds-mobile"></div>
           <div className='og-main-panel-mobile'>
             {/* <img src={scaredcrow} className="home-logo-mobile" alt="logo"/> */}
             <div>
