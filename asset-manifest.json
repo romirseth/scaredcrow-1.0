@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.49cdea17.css",
-    "main.js": "/static/js/main.6e7e3add.js",
+    "main.css": "/static/css/main.27d90583.css",
+    "main.js": "/static/js/main.ec7d3b47.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
+    "static/media/FlyingDutchman.wav": "/static/media/FlyingDutchman.7b6efd707660bedf1791.wav",
+    "static/media/Matt hehe.JPG": "/static/media/Matt hehe.0905ec6283d80f979b56.JPG",
+    "static/media/Romir dope pt 2.JPG": "/static/media/Romir dope pt 2.9c1adf8858560d68a21d.JPG",
+    "static/media/Aiden flow.JPG": "/static/media/Aiden flow.8ed2180e01783634270d.JPG",
     "static/media/Matt.JPG": "/static/media/Matt.8079345766abe9239d21.JPG",
     "static/media/spencer and aiden.JPG": "/static/media/spencer and aiden.3def085f0f40e4344efb.JPG",
     "static/media/BlackMagicWoman.mp3": "/static/media/BlackMagicWoman.e308bfcd33fa70993a80.mp3",
     "static/media/Guitar.JPG": "/static/media/Guitar.c433d8f63467fcce6956.JPG",
+    "static/media/Corp Throwaway - 10Sep25.mp3": "/static/media/Corp Throwaway - 10Sep25.a4199b062e5b7600f25f.mp3",
+    "static/media/When I Come Back (AW) - 09Sep25.mp3": "/static/media/When I Come Back (AW) - 09Sep25.937eceaf3f376e56f9ec.mp3",
+    "static/media/On the Fringe (Build Back) - 30Apr25.mp3": "/static/media/On the Fringe (Build Back) - 30Apr25.ea127d7755c5eb9bd146.mp3",
     "static/media/LastNightLive.mp3": "/static/media/LastNightLive.2041634c441119dbe941.mp3",
     "static/media/VeryVeryPunkFont-ZpZ0K.ttf": "/static/media/VeryVeryPunkFont-ZpZ0K.c5383a1a498ebc3a8199.ttf",
     "static/media/HotelCali.mp3": "/static/media/HotelCali.e6c18f4efc120c6464ca.mp3",
+    "static/media/Dutchman_Cropped.png": "/static/media/Dutchman_Cropped.ad96110f3810fa72cd99.png",
     "static/media/AllAgesDemo-2DPX.ttf": "/static/media/AllAgesDemo-2DPX.7a2d9079e06fdc8914e8.ttf",
     "static/media/clouds.png": "/static/media/clouds.655c9c060e6309ec9edf.png",
     "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
@@ -22,12 +30,12 @@
     "static/media/rock1.gif": "/static/media/rock1.7e280ad870ebdd477f92.gif",
     "static/media/rock2.gif": "/static/media/rock2.0a6dd6284d6a8d8e3459.gif",
     "index.html": "/index.html",
-    "main.49cdea17.css.map": "/static/css/main.49cdea17.css.map",
-    "main.6e7e3add.js.map": "/static/js/main.6e7e3add.js.map",
+    "main.27d90583.css.map": "/static/css/main.27d90583.css.map",
+    "main.ec7d3b47.js.map": "/static/js/main.ec7d3b47.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49cdea17.css",
-    "static/js/main.6e7e3add.js"
+    "static/css/main.27d90583.css",
+    "static/js/main.ec7d3b47.js"
   ]
 }
