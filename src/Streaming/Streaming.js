@@ -18,7 +18,7 @@ function Streaming() {
             <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center'}} alt="logo"/>
 
             <div>
-              <div style={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '50px', marginBottom: '70px'}}>
+              <div style={{fontFamily: 'Punk-STREAM', display: 'flex', justifyContent: 'center', width: '100%', marginTop: '50px', marginBottom: '70px'}}>
                 <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 
                   className='str-spotify-click'>Spotify
                 </a>

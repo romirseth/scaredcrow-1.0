@@ -1,66 +1,120 @@
+import { useRef, useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
+import { tracks } from './OriginalTracks.js';
 import './Originals.css';
 import '../index.css';
+
+// components / resources imports
+import DisplayTrack from '../AudioPlayer/DisplayTrack.js';
+import Controls from '../AudioPlayer/Controls.js';
+import ProgressBar from '../AudioPlayer/ProgressBar.js';
 import scaredcrow from '../_images/Scaredcrow.png';
-import candledivider from '../_images/candledivider.gif';
 
 function Originals() {
-  return (
-    <>
-    <BrowserView>
-      <div className='og-full-viewport-container'>
+    const [trackIndex, setTrackIndex] = useState(0);
+    const [prevTrackIndex, setPrevTrackIndex] = useState(3);
+    const [nextTrackIndex, setNextTrackIndex] = useState(1);
+    const [currentTrack, setCurrentTrack] = useState(tracks[trackIndex]);
+    const [previousTrack, setPreviousTrack] = useState(tracks[prevTrackIndex]);
+    const [nextTrack, setNextTrack] = useState(tracks[nextTrackIndex]);
+    const [timeProgress, setTimeProgress] = useState(0);
+    const [duration, setDuration] = useState(0);
+
+    // reference
+    const progressBarRef = useRef();
+    const audioRef = useRef();
+
+    return (
+      <>
+      <BrowserView>
+        <div className='og-full-viewport-container'>
+            <div className="stars"></div>
+            <div className="twinkling"></div> 
+            <div className="clouds"></div>
+
+            <div className='og-main-panel'>
+              <img src={scaredcrow} className="og-home-logo" alt="logo"/>
+              <div>
+                  <DisplayTrack {...{ 
+                      currentTrack, 
+                      previousTrack, 
+                      nextTrack, 
+                      audioRef, 
+                      setDuration, 
+                      progressBarRef 
+                  }} />
+                  <ProgressBar {...{ 
+                      progressBarRef, 
+                      audioRef, 
+                      timeProgress, 
+                      duration 
+                  }}/>
+                  <Controls {...{ 
+                      audioRef, 
+                      progressBarRef, 
+                      duration, 
+                      setTimeProgress, 
+
+                      tracks,
+                      trackIndex,
+                      setTrackIndex,
+                      setCurrentTrack,
+
+                      setPreviousTrack,
+                      setPrevTrackIndex,
+                      setNextTrack,
+                      setNextTrackIndex
+                  }} />
+              </div>
+            </div>
+        </div>
+      </BrowserView>
+      <MobileView>
+      <div className='og-full-viewport-container-mobile'>
           <div className="stars"></div>
           <div className="twinkling"></div> 
           <div className="clouds"></div>
-
-          <div className='og-main-panel'>
-            <img src={scaredcrow} className="home-logo" alt="logo"/>
-            <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'center'}} alt="logo"/>
-            
+          <div className='og-main-panel-mobile'>
+            {/* <img src={scaredcrow} className="home-logo-mobile" alt="logo"/> */}
             <div>
-              <iframe width="40%" height="275"
-                src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-              </iframe>
-            </div>
-            <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
-            
-            <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%', marginTop: '20px'}}>
-              <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us'>scaredcrowband@gmail com</a>
+                <div>
+                  <DisplayTrack {...{ 
+                      currentTrack, 
+                      previousTrack, 
+                      nextTrack, 
+                      audioRef, 
+                      setDuration, 
+                      progressBarRef 
+                  }} />
+                  <ProgressBar {...{ 
+                      progressBarRef, 
+                      audioRef, 
+                      timeProgress, 
+                      duration 
+                  }}/>
+                  <Controls {...{ 
+                      audioRef, 
+                      progressBarRef, 
+                      duration, 
+                      setTimeProgress, 
+
+                      tracks,
+                      trackIndex,
+                      setTrackIndex,
+                      setCurrentTrack,
+
+                      setPreviousTrack,
+                      setPrevTrackIndex,
+                      setNextTrack,
+                      setNextTrackIndex
+                  }} />
+              </div>
             </div>
           </div>
       </div>
-    </BrowserView>
-    <MobileView>
-    <div className='og-full-viewport-container-mobile'>
-        <div className="stars-mobile"></div>
-        <div className="twinkling-mobile"></div> 
-        <div className="clouds-mobile"></div>
-        <div className='og-main-panel-mobile'>
-          <img src={scaredcrow} className="og-home-logo-mobile" alt="logo"/>
-          <div>
-              <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
-          </div>
-
-          <div>
-            <iframe width="70%" height="300"
-              src="https://www.youtube.com/embed/Uvwza44H-N0?si=KpQG2GZqoONpz6NJ" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-          </div>
-          <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
-          <div className="og-email-mobile">
-                <a href="mailto:scaredcrowband@gmail.com" className='og-contact-us-mobile'>scaredcrowband@gmail com</a>
-          </div>
-        </div>
-    </div>
-    </MobileView>
-    </>
-  );
+      </MobileView>
+      </>
+    );
 }
 
 export default Originals;

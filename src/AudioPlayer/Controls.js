@@ -94,7 +94,7 @@ const Controls = ({
             setTrackIndex(trackIndex + 1);
             setCurrentTrack(tracks[trackIndex + 1]);
 
-            if(trackIndex + 2 >= tracks.length - 1) {
+            if(trackIndex + 2 > tracks.length - 1) {
                 setNextTrackIndex(0);
                 setNextTrack(tracks[0]);
             }
