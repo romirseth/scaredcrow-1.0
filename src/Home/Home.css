@@ -51,6 +51,18 @@ body,
   width: 100%;
 }
 
+.btns-container {
+  display: inline-flex;
+  height: 280px;
+}
+
+.main-icons {
+  border: 5px solid rgba(171, 170, 255, 1);
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
 .retro-nav-border {
   border-top: 5px solid rgba(171, 170, 255, 1);
   border-left: 5px solid rgba(171, 170, 255, 1);
@@ -83,6 +95,7 @@ body,
   width: 12vw;
   justify-self: center;
   cursor:pointer;
+  margin-bottom: 35px;
 }
 
 .retro-logo-camera {

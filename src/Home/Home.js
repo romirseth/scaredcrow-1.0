@@ -53,53 +53,47 @@ function Home() {
 
           <div className='main-panel'>
             <img src={scaredcrow} className="home-logo" alt="logo"/>
-            <div style={{display: 'flex'}}>
-              <img src={candledivider} style={{marginBottom: '10px', justifySelf: 'left'}} alt="logo"/>
-              <label style={{fontFamily: 'PixTimesSoft', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '50%'}}>
-                Scaredcrow is a Grunge-Punk-Psychedelic band based in Raleigh, NC started in 2022 by Aiden Wall, Spencer Gagnon, Romir Seth, and Matt Matunis. Since coming together, we have performed live across the Triangle area. We are currently working towards releasing our debut album. Stay Tuned! 
-              </label>
+            <div style={{display: 'inline-block'}}>
+              <img src={candledivider} style={{marginBottom: '0px', justifySelf: 'center'}} alt="logo"/>
+              {/* <label style={{fontFamily: 'PixTimesSoft', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '50%'}}>
+                Scaredcrow is a Grunge-Punk-Psychedelic band from Raleigh, NC started in 2022 by Aiden Wall, Spencer Gagnon, Romir Seth, and Matt Matunis. We've come a long way from the garage, performing live across the Triangle area. We are currently working towards releasing our debut album. Stay Tuned! 
+              </label> */}
             </div>
             <div className='main-panel-grid'>
-              <table style={{marginBlock: '15px'}}>
-                <thead></thead>
-                <tbody>
-                  <tr>
-                    <td className='retro-nav-border' onClick={navigateToOriginals}>
-                      <img src={crow} className="retro-logos" alt="logo"/>
-                    </td>
-                    <td className='retro-nav-border' onClick={navigateToStreaming}>
-                      <img src={spotifygif} className="retro-logos" alt="logo" style={{marginTop: '20px'}}/>
-                    </td>
-                    <td className='retro-nav-border' onClick={navigateToLive}>
-                      <img src={smash} className="retro-logos" alt="logo"/>
-                    </td>
-                    <td className='retro-nav-border' onClick={navigateToCovers}>
-                      <img src={shred} className="retro-logo-shred" alt="logo"/>
-                    </td>
-                    <td className='retro-nav-border' onClick={navigateToPhotos}>
-                      <img src={camera} className="retro-logo-camera" alt="logo" style={{marginTop: '40px'}}/>
-                    </td>
-                    <td className='retro-nav-border' onClick={navigateToAbout}>
-                      <img src={duck} className="retro-logo-duck" alt="logo"/>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className='retro-label-border' onClick={navigateToOriginals}><label className='retro-label'>Originals</label></td>
-                    <td className='retro-label-border' onClick={navigateToStreaming}><label className='retro-label'>Streaming</label></td>
-                    <td className='retro-label-border' onClick={navigateToLive}><label className='retro-label'>Live Performances</label></td>
-                    <td className='retro-label-border' onClick={navigateToCovers}><label className='retro-label'>Covers</label></td>
-                    <td className='retro-label-border' onClick={navigateToPhotos}><label className='retro-label'>Photo Gallery</label></td>
-                    <td className='retro-label-border' onClick={navigateToAbout}><label className='retro-label'>Get to know us!</label></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="btns-container">
+                <div onClick={navigateToOriginals} className="main-icons">
+                  <img src={crow} className="retro-logos" alt="logo"/>
+                  <label className='retro-label'>Originals</label>
+                </div>
+                <div onClick={navigateToStreaming} className="main-icons">
+                  <img src={spotifygif} className="retro-logos" alt="logo"/>
+                  <label className='retro-label'>Streaming</label>
+                </div>
+                <div onClick={navigateToLive} className="main-icons">
+                  <img src={smash} className="retro-logos" alt="logo"/>
+                  <label className='retro-label'>Live Performances</label>
+                </div>
+                <div onClick={navigateToCovers} className="main-icons">
+                  <img src={shred} className="retro-logos" alt="logo"/>
+                  <label className='retro-label'>Covers</label>
+                </div>
+                <div onClick={navigateToPhotos} className="main-icons">
+                  <img src={camera} className="retro-logos" alt="logo"/>
+                  <label className='retro-label'>Photos</label>
+                </div>
+                <div onClick={navigateToAbout} className="main-icons">
+                  <img src={duck} className="retro-logo-duck" alt="logo"/>
+                  <label className='retro-label' style={{marginBottom: '10px'}}>Get to know us!</label>
+                </div>
+              </div>
+              
             </div>
-            <div style={{display: 'flex'}}>
-              <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%'}}>
-                <label>Contact Us: </label>
+            <div style={{display: 'inline-block'}}>
+              <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'center'}} alt="logo"/>
+              <div style={{fontFamily: 'PixTimes', color: 'rgba(171, 170, 255, 1)', alignContent: 'center', fontSize: '20.5px', width: '60%', marginTop: '20px'}}>
+                {/* <label>Contact Us: </label> */}
                 <a href="mailto:scaredcrowband@gmail.com" className='contact-us'>scaredcrowband@gmail com</a>
               </div>
-              <img src={candledivider} style={{transform: 'rotate(180deg)', marginTop: '10px', justifySelf: 'right'}} alt="logo"/>
             </div>
           </div>
       </div>
