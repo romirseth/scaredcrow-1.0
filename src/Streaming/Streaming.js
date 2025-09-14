@@ -51,15 +51,15 @@ function Streaming() {
           
           <div>
               <div className="str-container">
-                <label href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 
+                <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 
                   className='str-spotify-click-mobile'>Spotify
-                </label>
-                <label href="https://www.youtube.com/@scaredcrowband-nc" 
+                </a>
+                <a href="https://www.youtube.com/@scaredcrowband-nc" 
                   className='str-youtube-click-mobile'>Youtube
-                </label>
-                <label href="https://music.apple.com/us/artist/scaredcrow/1809431092"
+                </a>
+                <a href="https://music.apple.com/us/artist/scaredcrow/1809431092"
                   className='str-apple-click-mobile'>Apple
-                </label>
+                </a>
                 </div>
             </div>
           <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
