@@ -14,8 +14,8 @@ import {
 const Controls = ({ 
     audioRef, progressBarRef, duration, setTimeProgress,
     tracks, trackIndex, setTrackIndex, setCurrentTrack,
-    setPreviousTrack, setPrevTrackIndex,
-    setNextTrack, setNextTrackIndex
+    previousTrackIndex, setPreviousTrack, setPrevTrackIndex,
+    nextTrackIndex, setNextTrack, setNextTrackIndex
  }) => {
     const playAnimationRef = useRef();
 
@@ -34,36 +34,48 @@ const Controls = ({
     };
 
     const handlePrevious = () => {
-        if(trackIndex === 0) {
-            setPrevTrackIndex(tracks.length - 2);
-            setPreviousTrack(tracks[tracks.length - 2]);
+        if(audioRef.current) {
+            const currentTime = audioRef.current.currentTime;
+            const duration = audioRef.current.duration;
 
-            setTrackIndex(tracks.length - 1);
-            setCurrentTrack(tracks[tracks.length - 1]);
+            if(duration !== 0 && currentTime < 4) {
+                // IF less than 4 seconds, go to previous
+                if(trackIndex === 0) {
+                    setPrevTrackIndex(tracks.length - 2);
+                    setPreviousTrack(tracks[tracks.length - 2]);
 
-            setNextTrackIndex(0);
-            setNextTrack(tracks[0]);
+                    setTrackIndex(tracks.length - 1);
+                    setCurrentTrack(tracks[tracks.length - 1]);
+
+                    setNextTrackIndex(0);
+                    setNextTrack(tracks[0]);
+                }
+                else if(trackIndex === 1) {
+                    setPrevTrackIndex(tracks.length - 1);
+                    setPreviousTrack(tracks[tracks.length - 1]);
+
+                    setTrackIndex(0);
+                    setCurrentTrack(tracks[0]);
+
+                    setNextTrackIndex(trackIndex);
+                    setNextTrack(tracks[trackIndex]);
+                }
+                else {
+                    setPrevTrackIndex(trackIndex - 2);
+                    setPreviousTrack(tracks[trackIndex - 2]);
+
+                    setTrackIndex(trackIndex - 1);
+                    setCurrentTrack(tracks[trackIndex - 1]);
+
+                    setNextTrackIndex(trackIndex);
+                    setNextTrack(tracks[trackIndex]);
+                }
+            }
+            else {
+                audioRef.current.currentTime = 0;
+            }
         }
-        else if(trackIndex === 1) {
-            setPrevTrackIndex(tracks.length - 1);
-            setPreviousTrack(tracks[tracks.length - 1]);
-
-            setTrackIndex(0);
-            setCurrentTrack(tracks[0]);
-
-            setNextTrackIndex(trackIndex);
-            setNextTrack(tracks[trackIndex]);
-        }
-        else {
-            setPrevTrackIndex(trackIndex - 2);
-            setPreviousTrack(tracks[trackIndex - 2]);
-
-            setTrackIndex(trackIndex - 1);
-            setCurrentTrack(tracks[trackIndex - 1]);
-
-            setNextTrackIndex(trackIndex);
-            setNextTrack(tracks[trackIndex]);
-        }
+       
     };
 
     const handleNext = () => {
@@ -108,6 +120,7 @@ const Controls = ({
     const repeat = useCallback(() => {
         if(audioRef.current) {
             const currentTime = audioRef.current.currentTime;
+            const duration = audioRef.current.duration;
             setTimeProgress(currentTime);
             progressBarRef.current.value = currentTime;
             progressBarRef.current.style.setProperty(
@@ -116,9 +129,27 @@ const Controls = ({
             );
 
             playAnimationRef.current = requestAnimationFrame(repeat);
+
+            if(duration && formatTime(currentTime) === formatTime(duration) && duration !== 0) {
+                handleNext();
+            }
         }
 
     }, [audioRef, duration, progressBarRef, setTimeProgress]);
+
+    const formatTime = (time) => {
+        if (time && !isNaN(time)) {
+            const minutes = Math.floor(time / 60);
+            const formatMinutes =
+            minutes < 10 ? `0${minutes}` : `${minutes}`;
+            const seconds = Math.floor(time % 60);
+            const formatSeconds =
+            seconds < 10 ? `0${seconds}` : `${seconds}`;
+            return `${formatMinutes}:${formatSeconds}`;
+        }
+        
+        return '00:00';
+    };
 
     useEffect(() => {
         if (isPlaying) {

@@ -1,4 +1,5 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
+import ScrollToTop from "../ScrollToTop.js";
 import './About.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
@@ -44,6 +45,7 @@ function About() {
                 <a href="mailto:scaredcrowband@gmail.com" className='ab-contact-us-mobile'>scaredcrowband@gmail com</a>
           </div>
         </div>
+        <ScrollToTop />
     </div>
     </MobileView>
     </>

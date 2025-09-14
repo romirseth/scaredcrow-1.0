@@ -1,4 +1,5 @@
 import { BrowserView, MobileView } from "react-device-detect";
+import ScrollToTop from "../ScrollToTop.js";
 import './Streaming.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
@@ -66,6 +67,7 @@ function Streaming() {
                 <a href="mailto:scaredcrowband@gmail.com" className='str-contact-us-mobile'>scaredcrowband@gmail com</a>
           </div>
         </div>
+        <ScrollToTop />
     </div>
     </MobileView>
     </>

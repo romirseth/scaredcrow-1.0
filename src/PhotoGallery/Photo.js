@@ -1,4 +1,5 @@
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
+import ScrollToTop from "../ScrollToTop.js";
 import './Photo.css';
 import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
@@ -38,6 +39,7 @@ function Photo() {
           </div>
           <img src={candledivider} style={{marginLeft: '-25px', transform: 'rotate(180deg)'}} alt="logo"/>
         </div>
+        <ScrollToTop />
     </div>
     </MobileView>
     </>

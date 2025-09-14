@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
+import ScrollToTop from '../ScrollToTop.js';
 import { tracks } from './OriginalTracks.js';
 import './Originals.css';
 import '../index.css';
@@ -111,6 +112,7 @@ function Originals() {
               </div>
             </div>
           </div>
+        <ScrollToTop />
       </div>
       </MobileView>
       </>

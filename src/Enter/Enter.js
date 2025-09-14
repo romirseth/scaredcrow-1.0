@@ -1,3 +1,4 @@
+import ScrollToTop from '../ScrollToTop.js';
 import './Enter.css';
 import '../index.css';
 import '../NightSky/nightsky.css';
@@ -19,6 +20,7 @@ function Enter() {
         <div className="entersandman lg:text-5xl mb-6 rounded-2xl"  onClick={navigateToHome} style={{pointerEvents: "all"}}>SCAREDCROW</div>
         <div className='come-in lg:text-5xl mb-6'  onClick={navigateToHome} style={{pointerEvents: "all"}}>ENTER</div>
       </header>
+      <ScrollToTop />
     </div>
   );
 }
