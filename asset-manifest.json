@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.27d90583.css",
-    "main.js": "/static/js/main.ccee2eb4.js",
+    "main.css": "/static/css/main.b4193b25.css",
+    "main.js": "/static/js/main.f077253e.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
-    "static/media/FlyingDutchman.wav": "/static/media/FlyingDutchman.7b6efd707660bedf1791.wav",
-    "static/media/Matt hehe.JPG": "/static/media/Matt hehe.0905ec6283d80f979b56.JPG",
-    "static/media/Romir dope pt 2.JPG": "/static/media/Romir dope pt 2.9c1adf8858560d68a21d.JPG",
-    "static/media/Aiden flow.JPG": "/static/media/Aiden flow.8ed2180e01783634270d.JPG",
-    "static/media/Matt.JPG": "/static/media/Matt.8079345766abe9239d21.JPG",
-    "static/media/spencer and aiden.JPG": "/static/media/spencer and aiden.3def085f0f40e4344efb.JPG",
     "static/media/BlackMagicWoman.mp3": "/static/media/BlackMagicWoman.e308bfcd33fa70993a80.mp3",
-    "static/media/Guitar.JPG": "/static/media/Guitar.c433d8f63467fcce6956.JPG",
+    "static/media/Flying-Dutchman.mp3": "/static/media/Flying-Dutchman.e01e8b333509c33fbe81.mp3",
     "static/media/Corp Throwaway - 10Sep25.mp3": "/static/media/Corp Throwaway - 10Sep25.a4199b062e5b7600f25f.mp3",
     "static/media/When I Come Back (AW) - 09Sep25.mp3": "/static/media/When I Come Back (AW) - 09Sep25.937eceaf3f376e56f9ec.mp3",
     "static/media/On the Fringe (Build Back) - 30Apr25.mp3": "/static/media/On the Fringe (Build Back) - 30Apr25.ea127d7755c5eb9bd146.mp3",
+    "static/media/spencer-and-aiden.webp": "/static/media/spencer-and-aiden.5eef63ba8eaf211ebb10.webp",
     "static/media/LastNightLive.mp3": "/static/media/LastNightLive.2041634c441119dbe941.mp3",
     "static/media/VeryVeryPunkFont-ZpZ0K.ttf": "/static/media/VeryVeryPunkFont-ZpZ0K.c5383a1a498ebc3a8199.ttf",
     "static/media/HotelCali.mp3": "/static/media/HotelCali.e6c18f4efc120c6464ca.mp3",
-    "static/media/Dutchman_Cropped.png": "/static/media/Dutchman_Cropped.ad96110f3810fa72cd99.png",
+    "static/media/Matt hehe.webp": "/static/media/Matt hehe.0ed63e640e34c76ce149.webp",
+    "static/media/Romir dope pt 2.webp": "/static/media/Romir dope pt 2.e32c9c2dd1ac58f6bf47.webp",
+    "static/media/Aiden flow.webp": "/static/media/Aiden flow.5744265dc1bd1ea6bfd5.webp",
+    "static/media/Matt.webp": "/static/media/Matt.7f4f541c2c78bb65a73c.webp",
+    "static/media/Dutchman_Cropped.webp": "/static/media/Dutchman_Cropped.4a6adfeeae617aaa9f46.webp",
+    "static/media/Guitar.webp": "/static/media/Guitar.07091329f00a4127f359.webp",
     "static/media/AllAgesDemo-2DPX.ttf": "/static/media/AllAgesDemo-2DPX.7a2d9079e06fdc8914e8.ttf",
     "static/media/clouds.png": "/static/media/clouds.655c9c060e6309ec9edf.png",
     "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
@@ -30,12 +30,12 @@
     "static/media/rock1.gif": "/static/media/rock1.7e280ad870ebdd477f92.gif",
     "static/media/rock2.gif": "/static/media/rock2.0a6dd6284d6a8d8e3459.gif",
     "index.html": "/index.html",
-    "main.27d90583.css.map": "/static/css/main.27d90583.css.map",
-    "main.ccee2eb4.js.map": "/static/js/main.ccee2eb4.js.map",
+    "main.b4193b25.css.map": "/static/css/main.b4193b25.css.map",
+    "main.f077253e.js.map": "/static/js/main.f077253e.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27d90583.css",
-    "static/js/main.ccee2eb4.js"
+    "static/css/main.b4193b25.css",
+    "static/js/main.f077253e.js"
   ]
 }
