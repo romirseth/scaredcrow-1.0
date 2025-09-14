@@ -14,31 +14,37 @@ import candledivider from '../_images/candledivider.gif';
 const navigateToOriginals = () => {
   console.log("navigateToOriginals");
   window.location.href = '/#originals';
+  window.scrollTo(0, 0);
 };
 
 const navigateToStreaming = () => {
   console.log("navigateToStreaming");
   window.location.href = '/#streaming';
+  window.scrollTo(0, 0);
 };
 
 const navigateToLive = () => {
   console.log("navigateToLive");
   window.location.href = '/#live';
+  window.scrollTo(0, 0);
 };
 
 const navigateToCovers = () => {
   console.log("navigateToCovers");
   window.location.href = '/#covers';
+  window.scrollTo(0, 0);
 };
 
 const navigateToPhotos= () => {
   console.log("navigateToPhotos");
   window.location.href = '/#photos';
+  window.scrollTo(0, 0);
 };
 
 const navigateToAbout = () => {
   console.log("navigateToAbout");
   window.location.href = '/#about';
+  window.scrollTo(0, 0);
 };
 
 function Home() {

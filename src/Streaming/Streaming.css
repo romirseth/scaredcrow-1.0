@@ -64,6 +64,13 @@ body,
   padding-block: 1rem;
 }
 
+.str-container {
+  display: inline-grid;
+  justify-content: 'center';
+  width: 70%;
+  margin-bottom: 10px;
+}
+
 .str-spotify-click {
   font-family: 'Punk';
   font-size: 4vw;
