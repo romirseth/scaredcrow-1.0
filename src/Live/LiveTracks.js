@@ -4,9 +4,9 @@ import BlackMagic from '../_audio/BlackMagicWoman.mp3';
 import HotelCali from '../_audio/HotelCali.mp3';
 
 // audio thumbnails
-import understanding from '../_images/spencer and aiden.JPG';
-import guitar from '../_images/Guitar.JPG';
-import matt from '../_images/Matt.JPG';
+import understanding from '../_thumbnails/spencer-and-aiden.webp';
+import guitar from '../_thumbnails/Guitar.webp';
+import matt from '../_thumbnails/Matt.webp';
 
 export const tracks = [
     {

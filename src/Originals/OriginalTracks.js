@@ -1,14 +1,14 @@
 // audio files
-import dutchy from '../_audio/FlyingDutchman.wav';
+import dutchy from '../_audio/Flying-Dutchman.mp3';
 import wicb from '../_audio/When I Come Back (AW) - 09Sep25.mp3'
 import corp from '../_audio/Corp Throwaway - 10Sep25.mp3';
 import fringe from '../_audio/On the Fringe (Build Back) - 30Apr25.mp3';
 
 // audio thumbnails
-import dutchyTN from '../_images/Dutchman_Cropped.png';
-import wicbTN from '../_images/Matt hehe.JPG';
-import fringeTN from '../_images/Romir dope pt 2.JPG';
-import corpTN from '../_images/Aiden flow.JPG';
+import dutchyTN from '../_thumbnails/Dutchman_Cropped.webp';
+import wicbTN from '../_thumbnails/Matt hehe.webp';
+import fringeTN from '../_thumbnails/Romir dope pt 2.webp';
+import corpTN from '../_thumbnails/Aiden flow.webp';
 
 export const tracks = [
     {
