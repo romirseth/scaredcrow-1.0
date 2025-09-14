@@ -45,11 +45,11 @@ function Streaming() {
         <div className='str-main-panel-mobile'>
           <img src={scaredcrow} className="home-logo-mobile" alt="logo"/>
           <div>
-              <img src={candledivider} style={{marginBlock: '5px'}} alt="logo"/>
+              <img src={candledivider} style={{marginBlock: '0px'}} alt="logo"/>
           </div>
           
           <div>
-              <div style={{display: 'inline-grid', justifyContent: 'center', width: '100%', marginBottom: '40px'}}>
+              <div style={{display: 'inline-grid', justifyContent: 'center', width: '100%', marginBottom: '10px'}}>
                 <a href="https://prf.hn/click/camref:1101ljvYv/pubref:albumuuid%3D2AB5D348-D651-4E38-A813CED15AA7CDBD/destination:https://open.spotify.com/album/0aHNvDya9FcFIaWMPDrgAw" 
                   className='str-spotify-click-mobile'>Spotify
                 </a>

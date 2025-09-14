@@ -44,11 +44,12 @@ body,
 
 .lv-main-panel-mobile {
   z-index: 3;
-  height: 100vh;
+  height: 95vh;
   margin-left: 0px;
   text-align: -webkit-center;
   width: 100vw;
-  align-content: center;
+  /* align-content: center; */
+  margin-top: 20px;
 }
 
 .lv-home-logo {
