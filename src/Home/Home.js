@@ -79,7 +79,7 @@ function Home() {
                 </div>
                 <div onClick={navigateToPhotos} className="main-icons">
                   <img src={camera} className="retro-logos" alt="logo"/>
-                  <label className='retro-label'>Photos</label>
+                  <label className='retro-label'>Photo Gallery</label>
                 </div>
                 <div onClick={navigateToAbout} className="main-icons">
                   <img src={duck} className="retro-logo-duck" alt="logo"/>

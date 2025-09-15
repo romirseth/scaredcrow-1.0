@@ -16,7 +16,7 @@ body,
   margin: 0; /* Remove default body margins */
 }
 
-.full-viewport-container {
+.cv-full-viewport-container {
   display: flex;
   align-content: space-evenly;
   background-color: black;
@@ -25,7 +25,7 @@ body,
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.full-viewport-container-mobile {
+.cv-full-viewport-container-mobile {
   display: flex;
   align-content: space-evenly;
   background-color: black;
@@ -34,7 +34,7 @@ body,
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.main-panel {
+.cv-main-panel {
   z-index: 3;
   height: 100vh;
   margin-left: 30px;
@@ -42,25 +42,26 @@ body,
   width: 100vw;
 }
 
-.main-panel-mobile {
+.cv-main-panel-mobile {
   z-index: 3;
-  height: 100vh;
-  margin-left: 30px;
+  height: 95vh;
+  margin-left: 0px;
   text-align: -webkit-center;
   width: 100vw;
+  margin-top: 20px;
 }
 
-.home-logo {
+.cv-home-logo {
   height: 27vmin;
   padding-block: 1rem;
 }
 
-.home-logo-mobile {
+.cv-home-logo-mobile {
   height: 35vmin;
   padding-block: 1rem;
 }
 
-.contact-us {
+.cv-contact-us {
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Deadline';
   font-size: 20.5px;
