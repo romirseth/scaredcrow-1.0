@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.66194869.css",
-    "main.js": "/static/js/main.61b46e9d.js",
+    "main.css": "/static/css/main.f4989719.css",
+    "main.js": "/static/js/main.c2d1a26f.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
+    "static/media/TheGroove.png": "/static/media/TheGroove.2d13329ecdbb186169ce.png",
+    "static/media/AIden-smile.png": "/static/media/AIden-smile.bad163b6f606a4c33879.png",
     "static/media/No we arnt doing Ed Sheeren .webp": "/static/media/No we arnt doing Ed Sheeren .eb74bfd2ae135d7489d6.webp",
     "static/media/Civil War - 05Mar24.mp3": "/static/media/Civil War - 05Mar24.060973cb107d3996051a.mp3",
+    "static/media/Understanding.png": "/static/media/Understanding.ebb9f42fbaa5335f9329.png",
     "static/media/BlackMagicWoman.mp3": "/static/media/BlackMagicWoman.e308bfcd33fa70993a80.mp3",
     "static/media/Flying-Dutchman.mp3": "/static/media/Flying-Dutchman.e01e8b333509c33fbe81.mp3",
     "static/media/Corp Throwaway - 10Sep25.mp3": "/static/media/Corp Throwaway - 10Sep25.a4199b062e5b7600f25f.mp3",
@@ -13,7 +16,6 @@
     "static/media/Everlong - 10Sep25.mp3": "/static/media/Everlong - 10Sep25.fd2e6fbcd5e5e5cc6847.mp3",
     "static/media/On the Fringe (Build Back) - 30Apr25.mp3": "/static/media/On the Fringe (Build Back) - 30Apr25.ea127d7755c5eb9bd146.mp3",
     "static/media/Green Manalishi - 10Sep25.mp3": "/static/media/Green Manalishi - 10Sep25.42d1e5d98f8a1fb9981c.mp3",
-    "static/media/AIden-smile.webp": "/static/media/AIden-smile.190ca879300acf2163f0.webp",
     "static/media/spencer-and-aiden.webp": "/static/media/spencer-and-aiden.5eef63ba8eaf211ebb10.webp",
     "static/media/LastNightLive.mp3": "/static/media/LastNightLive.2041634c441119dbe941.mp3",
     "static/media/Aiden-grooving.webp": "/static/media/Aiden-grooving.37d0253ba68fa728ad33.webp",
@@ -21,7 +23,6 @@
     "static/media/Romir-shred-part-3.webp": "/static/media/Romir-shred-part-3.b0f61500f762cd9790f8.webp",
     "static/media/VeryVeryPunkFont-ZpZ0K.ttf": "/static/media/VeryVeryPunkFont-ZpZ0K.c5383a1a498ebc3a8199.ttf",
     "static/media/HotelCali.mp3": "/static/media/HotelCali.e6c18f4efc120c6464ca.mp3",
-    "static/media/Understanding (1).webp": "/static/media/Understanding (1).c4358b6245d8c76e2742.webp",
     "static/media/Matt hehe.webp": "/static/media/Matt hehe.0ed63e640e34c76ce149.webp",
     "static/media/Romir dope pt 2.webp": "/static/media/Romir dope pt 2.e32c9c2dd1ac58f6bf47.webp",
     "static/media/Aiden flow.webp": "/static/media/Aiden flow.5744265dc1bd1ea6bfd5.webp",
@@ -42,12 +43,12 @@
     "static/media/rock1.gif": "/static/media/rock1.7e280ad870ebdd477f92.gif",
     "static/media/rock2.gif": "/static/media/rock2.0a6dd6284d6a8d8e3459.gif",
     "index.html": "/index.html",
-    "main.66194869.css.map": "/static/css/main.66194869.css.map",
-    "main.61b46e9d.js.map": "/static/js/main.61b46e9d.js.map",
+    "main.f4989719.css.map": "/static/css/main.f4989719.css.map",
+    "main.c2d1a26f.js.map": "/static/js/main.c2d1a26f.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66194869.css",
-    "static/js/main.61b46e9d.js"
+    "static/css/main.f4989719.css",
+    "static/js/main.c2d1a26f.js"
   ]
 }
