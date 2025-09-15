@@ -118,7 +118,6 @@ body,
   display: block;
   justify-content: center;
   margin-block: 40px;
-  margin-left: 5px;
 }
 
 .ph-player-controls-mobile {
@@ -129,11 +128,20 @@ body,
   margin-left: 0px;
 }
 
-.ph-skip {
+.ph-skip-back {
   width: 65px; /* Base width */
   height: 70px; /* Height of the triangle */
   color: rgba(171, 170, 255, 1); /* Solid color */
   cursor: pointer;
+  margin-right: 15px;
+}
+
+.ph-skip-forward {
+  width: 65px; /* Base width */
+  height: 70px; /* Height of the triangle */
+  color: rgba(171, 170, 255, 1); /* Solid color */
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .ph-skip-back-mobile {
@@ -141,7 +149,7 @@ body,
   height: 70px; /* Height of the triangle */
   color: rgba(171, 170, 255, 1); /* Solid color */
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .ph-skip-forward-mobile {
@@ -149,7 +157,7 @@ body,
   height: 70px; /* Height of the triangle */
   color: rgba(171, 170, 255, 1); /* Solid color */
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .ph-contact-us {

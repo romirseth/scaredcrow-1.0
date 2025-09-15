@@ -1,8 +1,8 @@
 // pictures
 import p1 from './photogallery/IMG_4933.jpg';
-import p2 from './photogallery/AIden-smile.webp';
-import p3 from './photogallery/Matt hehe.webp';
-import p4 from './photogallery/Understanding (1).webp';
+import p2 from './photogallery/AIden-smile.png';
+import p3 from './photogallery/TheGroove.png';
+import p4 from './photogallery/Understanding.png';
 import p5 from './photogallery/IMG_4920.jpeg';
 import p6 from './photogallery/No we arnt doing Ed Sheeren .webp'
 import p7 from './photogallery/Spencer-shredding-_1_.webp';
@@ -42,6 +42,6 @@ export const pictures = [
     {
         id: 6,
         thumbnail: p7,
-        title: '"Crowd Work"'
+        title: '"Power Stance"'
     }
 ];

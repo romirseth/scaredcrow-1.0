@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 .plr-caption {
-  margin: 10px;
+  margin: 5px;
 }
 
 .plr-track-info {
   font-family: 'PixTimes';
   color:rgba(0, 250, 154, 1);
+  font-size: 18px;
 }
 
 .plr-track-info-mobile {
   font-family: 'PixTimes';
   color:rgba(0, 250, 154, 1);
+  font-size: 18px;
 }
 
 .plr-carousel {

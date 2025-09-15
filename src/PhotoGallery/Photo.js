@@ -8,8 +8,8 @@ import '../index.css';
 import scaredcrow from '../_images/Scaredcrow.png';
 
 import {
-  IoPlaySkipBackSharp,
-  IoPlaySkipForwardSharp,
+  IoPlayBack,
+  IoPlayForward,
 } from 'react-icons/io5';
 
 function Photo() {
@@ -118,10 +118,10 @@ function Photo() {
             </div>
               <div className="ph-player-controls">
                   <button onClick={handlePrevious}>
-                      <IoPlaySkipBackSharp className='ph-skip'/>
+                      <IoPlayBack className='ph-skip-back'/>
                   </button>
                   <button onClick={handleNext}>
-                      <IoPlaySkipForwardSharp className='ph-skip'/>
+                      <IoPlayForward className='ph-skip-forward'/>
                   </button>
               </div>
           </div>
@@ -144,10 +144,10 @@ function Photo() {
           </div>
           <div className="ph-player-controls-mobile">
                 <button onClick={handlePrevious}>
-                    <IoPlaySkipBackSharp className='ph-skip-back-mobile'/>
+                    <IoPlayBack className='ph-skip-back-mobile'/>
                 </button>
                 <button onClick={handleNext}>
-                    <IoPlaySkipForwardSharp className='ph-skip-forward-mobile'/>
+                    <IoPlayForward className='ph-skip-forward-mobile'/>
                 </button>
           </div>
         </div>

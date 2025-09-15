@@ -3,12 +3,16 @@ import '../AudioPlayer/Player.css';
 
 // icons
 import {
-  IoPlayBackSharp,
-  IoPlayForwardSharp,
-  IoPlaySkipBackSharp,
-  IoPlaySkipForwardSharp,
-  IoPlaySharp,
-  IoPauseSharp,
+//   IoPlayBackSharp,
+//   IoPlayForwardSharp,
+//   IoPlaySkipBackSharp,
+//   IoPlaySkipForwardSharp,
+  IoPlayBack,
+  IoPlayForward,
+  IoPlay,
+  IoPause
+//   IoPlaySharp,
+//   IoPauseSharp,
 } from 'react-icons/io5';
 
 const Controls = ({ 
@@ -25,13 +29,13 @@ const Controls = ({
         setIsPlaying((prev) => !prev);
     };
 
-    const skipForward = () => {
-    audioRef.current.currentTime += 15;
-    };
+    // const skipForward = () => {
+    // audioRef.current.currentTime += 15;
+    // };
 
-    const skipBackward = () => {
-    audioRef.current.currentTime -= 15;
-    };
+    // const skipBackward = () => {
+    // audioRef.current.currentTime -= 15;
+    // };
 
     const handlePrevious = () => {
         if(audioRef.current) {
@@ -163,19 +167,19 @@ const Controls = ({
     return (
         <div className="plr-player-controls">
             <button onClick={handlePrevious}>
-                <IoPlaySkipBackSharp className='plr-skip'/>
+                <IoPlayBack className='plr-skip'/>
             </button>
             {/* <button onClick={skipBackward}>
                 <IoPlayBackSharp className='plr-skip'/>
             </button> */}
             <button onClick={togglePlayPause}>
-                {isPlaying ? <IoPauseSharp className='plr-play'/> : <IoPlaySharp className='plr-play'/>}
+                {isPlaying ? <IoPause className='plr-play'/> : <IoPlay className='plr-play'/>}
             </button>
             {/* <button onClick={skipForward}>
                 <IoPlayForwardSharp className='plr-skip'/>
             </button> */}
             <button onClick={handleNext}>
-                <IoPlaySkipForwardSharp className='plr-skip'/>
+                <IoPlayForward className='plr-skip'/>
             </button>
         </div>
     );
