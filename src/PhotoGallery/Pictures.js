@@ -1,5 +1,5 @@
 // pictures
-import p1 from './photogallery/IMG_4933.jpg';
+import p1 from './photogallery/Romir-shred-part-3.webp';
 import p2 from './photogallery/AIden-smile.png';
 import p3 from './photogallery/TheGroove.png';
 import p4 from './photogallery/Understanding.png';
