@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f4989719.css",
-    "main.js": "/static/js/main.ae7360ad.js",
+    "main.js": "/static/js/main.6b5711aa.js",
     "static/js/453.44407276.chunk.js": "/static/js/453.44407276.chunk.js",
     "static/media/TheGroove.png": "/static/media/TheGroove.2d13329ecdbb186169ce.png",
     "static/media/AIden-smile.png": "/static/media/AIden-smile.bad163b6f606a4c33879.png",
@@ -32,7 +32,6 @@
     "static/media/AllAgesDemo-2DPX.ttf": "/static/media/AllAgesDemo-2DPX.7a2d9079e06fdc8914e8.ttf",
     "static/media/clouds.png": "/static/media/clouds.655c9c060e6309ec9edf.png",
     "static/media/Scaredcrow.png": "/static/media/Scaredcrow.1fc7d2d7c3da906efb55.png",
-    "static/media/IMG_4933.jpg": "/static/media/IMG_4933.e9ffcc95cc5120b0b615.jpg",
     "static/media/IMG_4920.jpeg": "/static/media/IMG_4920.d9a1749d4412eeb461d0.jpeg",
     "static/media/spotifydrawing.gif": "/static/media/spotifydrawing.d3fa394c8a393fdd316b.gif",
     "static/media/greensky.webp": "/static/media/greensky.644e53de261249d793a1.webp",
@@ -44,11 +43,11 @@
     "static/media/rock2.gif": "/static/media/rock2.0a6dd6284d6a8d8e3459.gif",
     "index.html": "/index.html",
     "main.f4989719.css.map": "/static/css/main.f4989719.css.map",
-    "main.ae7360ad.js.map": "/static/js/main.ae7360ad.js.map",
+    "main.6b5711aa.js.map": "/static/js/main.6b5711aa.js.map",
     "453.44407276.chunk.js.map": "/static/js/453.44407276.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4989719.css",
-    "static/js/main.ae7360ad.js"
+    "static/js/main.6b5711aa.js"
   ]
 }
