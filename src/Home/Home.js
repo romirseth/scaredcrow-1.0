@@ -8,7 +8,7 @@ import crow from '../_images/bird_anim_01.gif';
 import duck from '../_images/dancing-duck.gif';
 import spotifygif from '../_images/spotifydrawing.gif';
 import smash from '../_images/rock1.gif';
-import shred from '../_images/rock2.gif';
+// import shred from '../_images/rock2.gif';
 import camera from '../_images/picture-photo.gif';
 import candledivider from '../_images/candledivider.gif';
 
@@ -27,10 +27,10 @@ const navigateToLive = () => {
   window.location.href = '/#live';
 };
 
-const navigateToCovers = () => {
-  console.log("navigateToCovers");
-  window.location.href = '/#covers';
-};
+// const navigateToCovers = () => {
+//   console.log("navigateToCovers");
+//   window.location.href = '/#covers';
+// };
 
 const navigateToPhotos= () => {
   console.log("navigateToPhotos");
@@ -65,18 +65,18 @@ function Home() {
                   <img src={crow} className="retro-logos" alt="logo"/>
                   <label className='retro-label'>Originals</label>
                 </div>
-                <div onClick={navigateToStreaming} className="main-icons">
-                  <img src={spotifygif} className="retro-logos" alt="logo"/>
-                  <label className='retro-label'>Streaming</label>
-                </div>
                 <div onClick={navigateToLive} className="main-icons">
                   <img src={smash} className="retro-logos" alt="logo"/>
                   <label className='retro-label'>Live Performances</label>
                 </div>
-                <div onClick={navigateToCovers} className="main-icons">
+                <div onClick={navigateToStreaming} className="main-icons">
+                  <img src={spotifygif} className="retro-logos" alt="logo" style={{paddingRight: '10px'}}/>
+                  <label className='retro-label'>Streaming</label>
+                </div>
+                {/* <div onClick={navigateToCovers} className="main-icons">
                   <img src={shred} className="retro-logos" alt="logo"/>
                   <label className='retro-label'>Covers</label>
-                </div>
+                </div> */}
                 <div onClick={navigateToPhotos} className="main-icons">
                   <img src={camera} className="retro-logos" alt="logo"/>
                   <label className='retro-label'>Photo Gallery</label>
@@ -112,18 +112,18 @@ function Home() {
             <img src={crow} className="hm-retro-logos-mobile" alt="logo"/>
             <label className='hm-retro-label-mobile'>Originals</label>
           </div>
-          <div className='hm-retro-container-mobile' onClick={navigateToStreaming}>
-            <img src={spotifygif} className="hm-retro-logos-mobile" alt="logo"/>
-            <label className='hm-retro-label-mobile'>Streaming</label>
-          </div>
           <div className='hm-retro-container-mobile' onClick={navigateToLive}>
             <img src={smash} className="hm-retro-logos-mobile" alt="logo"/>
             <label className='hm-retro-label-mobile'>Live</label>
           </div>
-          <div className='hm-retro-container-mobile' onClick={navigateToCovers}>
+          <div className='hm-retro-container-mobile' onClick={navigateToStreaming}>
+            <img src={spotifygif} className="hm-retro-logos-mobile" alt="logo" style={{paddingRight: '5px'}}/>
+            <label className='hm-retro-label-mobile'>Streaming</label>
+          </div>
+          {/* <div className='hm-retro-container-mobile' onClick={navigateToCovers}>
             <img src={shred} className="hm-retro-logos-mobile" alt="logo"/>
             <label className='hm-retro-label-mobile'>Covers</label>
-          </div>
+          </div> */}
           <div className='hm-retro-container-mobile' onClick={navigateToPhotos}>
             <img src={camera} className="hm-retro-logos-mobile" alt="logo"/>
             <label className='hm-retro-label-mobile'>Photo Gallery</label>

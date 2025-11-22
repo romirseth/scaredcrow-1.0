@@ -18,16 +18,16 @@ export const tracks = [
     },
     {
         id: 1,
-        title: 'Hotel California',
-        src: HotelCali,
-        date: 'December 6 2024',
-        thumbnail: matt,
-    },
-    {
-        id: 2,
         title: 'Black Magic Woman',
         src: BlackMagic,
         date: 'December 6 2024',
         thumbnail: guitar,
+    },
+    {
+        id: 2,
+        title: 'Hotel California',
+        src: HotelCali,
+        date: 'December 6 2024',
+        thumbnail: matt,
     },
 ];
