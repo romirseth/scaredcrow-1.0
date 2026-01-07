@@ -2,7 +2,7 @@
 import dutchy from '../_audio/Flying-Dutchman.mp3';
 import corp from '../_audio/Corp Throwaway Final (Finally) - 28Dec25.mp3';
 import wicb from '../_audio/When I Come Back (Master MP3).mp3'
-import fringe from '../_audio/On the Fringe (Build Back) - 30Apr25.mp3';
+import fringe from '../_audio/On the Fringe Demo.mp3';
 
 // audio thumbnails
 import dutchyTN from '../_thumbnails/Dutchman_Cropped.webp';
